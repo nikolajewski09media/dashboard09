@@ -17,7 +17,7 @@ export default async function runReport() {
     property: `properties/${propertyId}`,
     dateRanges: [
       {
-        startDate: "2020-03-31",
+        startDate: "2020-04-30",
         endDate: "today",
       },
     ],
