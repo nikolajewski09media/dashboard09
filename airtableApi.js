@@ -1,45 +1,61 @@
-import Airtable from "airtable";
-import * as dotenv from "dotenv";
-dotenv.config();
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
-    "appM88vCbapvrcTCi"
-);
+import Airtable from 'airtable';
+// Remember to set type: module in package.json or use .mjs extension
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-function getDomainsAndPropertyIds() {
+import { Low } from 'lowdb'
+import { JSONFile } from 'lowdb/node'
+var base = new Airtable({ apiKey: 'keySv1TtnsLdNzGoa' }).base('appM88vCbapvrcTCi');
 
-    // const propertiesObj = [];
+// db.json file path
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const file = join(__dirname, 'db.json')
 
-    base("Domains")
-        .select({
-            // Selecting the first 3 records in Grid view:
-            maxRecords: 3,
-            view: "Grid view",
-        })
-        .eachPage(
-            function page(records, fetchNextPage) {
-                // This function (`page`) will get called for each page of records.
+// Configure lowdb to write data to JSON file
+const adapter = new JSONFile(file)
+const defaultData = { posts: [] }
+const db = new Low(adapter, defaultData)
 
-                records.forEach(function (record) {
-                    console.log({ domain: record.get("Domain"), id: record.get("Porperty-ID v4 (from Porperty-ID v4)")[0] })
-
-                });
+// Read data from JSON file, this will set db.data content
+// If JSON file doesn't exist, defaultData is used instead
 
 
+base('Domains').select({
+    // Selecting the first 3 records in Grid view:
+    maxRecords: 3,
+    view: "Grid view"
+}).eachPage(function page(records, fetchNextPage) {
+    // This function (`page`) will get called for each page of records.
 
-                // To fetch the next page of records, call `fetchNextPage`.
-                // If there are more records, `page` will get called again.
-                // If there are no more records, `done` will get called.
-                fetchNextPage();
-            },
-            function done(err) {
-                if (err) {
-                    console.error(err);
-                    return;
-                }
-            }
-        );
+    records.forEach(async function (record, index) {
 
-    // return propertiesObj;
-}
+        await db.read()
 
-getDomainsAndPropertyIds();
+        // Create and query items using plain JavaScript
+        db.data.posts.push(...[{ propertiy: record.get('Domain'), id: record.get('Porperty-ID v4 (from Porperty-ID v4)')[0] }])
+
+        await db.write()
+
+        console.log(index, 'Retrieved', record.get('Domain'), record.get('Porperty-ID v4 (from Porperty-ID v4)'));
+
+
+    });
+
+    // To fetch the next page of records, call `fetchNextPage`.
+    // If there are more records, `page` will get called again.
+    // If there are no more records, `done` will get called.
+    fetchNextPage();
+
+}, function done(err) {
+    if (err) { console.error(err); return; }
+});
+
+
+// base('Domains').select({
+//     view: 'Grid view'
+// }).firstPage(function (err, records) {
+//     if (err) { console.error(err); return; }
+//     records.forEach(function (record, index) {
+//         console.log(index, 'Retrieved', record.get('Domain'), record.get('Porperty-ID v4 (from Porperty-ID v4)'));
+//     });
+// });

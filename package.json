@@ -15,6 +15,7 @@
     "@google-analytics/data": "^3.2.2",
     "airtable": "^0.11.6",
     "dotenv": "^16.0.3",
+    "lowdb": "^6.0.1",
     "nodemon": "^2.0.22"
   }
 }
