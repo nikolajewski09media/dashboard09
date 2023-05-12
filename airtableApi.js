@@ -9,7 +9,7 @@ var base = new Airtable({ apiKey: 'keySv1TtnsLdNzGoa' }).base('appM88vCbapvrcTCi
 
 // db.json file path
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const file = join(__dirname, 'db.json')
+const file = join(__dirname, 'propertiesV4.json')
 
 // Configure lowdb to write data to JSON file
 const adapter = new JSONFile(file)
@@ -22,7 +22,7 @@ const db = new Low(adapter, defaultData)
 
 base('Domains').select({
     // Selecting the first 3 records in Grid view:
-    maxRecords: 3,
+    // maxRecords: 3,
     view: "Grid view"
 }).eachPage(function page(records, fetchNextPage) {
     // This function (`page`) will get called for each page of records.
