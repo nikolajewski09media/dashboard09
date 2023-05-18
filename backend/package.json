@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon server.js",
+    "watch": "node --watch server.js",
     "dev": "export GOOGLE_APPLICATION_CREDENTIALS=/home/herb/GitHub/dashboard09/backend/credentials.json && npm run watch"
   },
   "dependencies": {
