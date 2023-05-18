@@ -2,7 +2,15 @@
  * TODO(developer): Uncomment this variable and replace with your
  *   Google Analytics 4 property ID before running the sample.
  */
-const propertyId = "355361722";
+
+
+
+import propertyIds from "../model/propertiesV4.model.js";
+
+// console.log(propertyIds)
+
+
+// const propertyId = "355361722";
 
 // Imports the Google Analytics Data API client library.
 import { BetaAnalyticsDataClient } from "@google-analytics/data";
@@ -12,7 +20,7 @@ import { BetaAnalyticsDataClient } from "@google-analytics/data";
 const analyticsDataClient = new BetaAnalyticsDataClient();
 
 // Runs a simple report.
-export default async function runReport() {
+export default async function runReport(propertyId) {
   const [response] = await analyticsDataClient.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [
@@ -39,4 +47,4 @@ export default async function runReport() {
   });
 }
 
-runReport();
+runReport(propertyIds[100].id);
