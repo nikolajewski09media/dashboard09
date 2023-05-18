@@ -5,7 +5,7 @@ import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const file = join(__dirname, "..", "propertiesV4.DB.json");
+const file = join(__dirname, "..", "db", "propertiesV4.DB.json");
 
 const adapter = new JSONFile(file);
 const defaultData = { properties: [] };
@@ -13,6 +13,6 @@ const db = new Low(adapter, defaultData);
 
 await db.read();
 
-const propertyIds = db.data.properties;
+const properties = db.data.properties;
 
-export default propertyIds;
+export default properties;

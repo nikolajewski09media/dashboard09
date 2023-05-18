@@ -4,12 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "dev": "export GOOGLE_APPLICATION_CREDENTIALS=/home/herb/GitHub/dashboard09/backend/credentials.json && npm run watch"
   },
   "dependencies": {
     "@google-analytics/data": "^3.2.2",
     "airtable": "^0.11.6",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "lowdb": "^6.0.1",
     "nodemon": "^2.0.22"
   }

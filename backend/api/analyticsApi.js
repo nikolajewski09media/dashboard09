@@ -1,32 +1,18 @@
-/**
- * TODO(developer): Uncomment this variable and replace with your
- *   Google Analytics 4 property ID before running the sample.
- */
-
-
-
-import propertyIds from "../model/propertiesV4.model.js";
-
-// console.log(propertyIds)
-
-
-// const propertyId = "355361722";
-
-// Imports the Google Analytics Data API client library.
 import { BetaAnalyticsDataClient } from "@google-analytics/data";
 
-// Using a default constructor instructs the client to use the credentials
-// specified in GOOGLE_APPLICATION_CREDENTIALS environment variable.
+
+
+
 const analyticsDataClient = new BetaAnalyticsDataClient();
 
 // Runs a simple report.
-export default async function runReport(propertyId) {
+export default async function runReport(propertyId, start, ende) {
   const [response] = await analyticsDataClient.runReport({
     property: `properties/${propertyId}`,
     dateRanges: [
       {
-        startDate: "2020-04-30",
-        endDate: "today",
+        startDate: start || "yesterday",
+        endDate: ende || "yesterday",
       },
     ],
     dimensions: [
@@ -41,10 +27,10 @@ export default async function runReport(propertyId) {
     ],
   });
 
-  console.log("Report result for " + propertyId + ":");
-  response.rows.forEach((row) => {
-    console.log(row.dimensionValues[0].value, row.metricValues[0].value);
-  });
+  const reportData = response.rows.reduce((acc, cur) => {
+    acc[cur.dimensionValues[0].value] = cur.metricValues[0].value;
+    return acc
+  }, {});
+  return reportData;
 }
 
-runReport(propertyIds[100].id);

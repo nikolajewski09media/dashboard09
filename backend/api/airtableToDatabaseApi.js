@@ -21,7 +21,7 @@ const db = new Low(adapter, defaultData)
 
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base('appM88vCbapvrcTCi');
-
+await db.read()
 base('Domains').select({
     // maxRecords: 3,
     view: "Grid view"
@@ -30,8 +30,7 @@ base('Domains').select({
 
     records.forEach(async function (record) {
         // Hier passiert das schreiben in die porperties-Datenbank
-        await db.read()
-        db.data.properties.push(...[{ property: record.get('Domain'), id: record.get('Porperty-ID v4 (from Porperty-ID v4)')[0] }])
+        db.data.properties.push({ label: record.get('Domain'), id: record.get('Porperty-ID v4 (from Porperty-ID v4)')[0] })
         await db.write()
     });
 
