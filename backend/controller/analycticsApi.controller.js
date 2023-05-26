@@ -24,6 +24,7 @@ export function getAllStatistic(req, res) {
 
 export async function runAllReport() {
     const reportData = [];
+    console.log('Fetch hat begonnen. Kann ca. 30 bis 120 Sekunden dauern!')
     for (const property of properties) {
         const singleReportData = await runReport(
             property.id,
@@ -38,4 +39,5 @@ export async function runAllReport() {
         });
     }
     setStatistic(reportData);
+    console.log('Daten wurden erfolgreich von GA gefetched');
 }

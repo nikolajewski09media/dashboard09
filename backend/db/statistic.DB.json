@@ -1,157 +1,179 @@
 {
   "statistic": [
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "as-schluesseldienst-muenchen.de",
       "id": 361725684,
       "report": {}
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "schluesseldienst-365-tage.de",
       "id": 361722637,
       "report": {}
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "key-notservice.de",
       "id": 361719658,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schlüsseldienst-in.com",
-      "id": 361744731,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "24h-tueroeffnung.de",
-      "id": 361716035,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "berlin-schluesseldienst.net",
-      "id": 361706707,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-fuer-wien.at",
-      "id": 361708141,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "aufsperrdienst-regional.de",
-      "id": 361742955,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-24std.at",
-      "id": 361723382,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "aufsperrdienst-24.de",
-      "id": 361732621,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "aufsperrdienst-deutschland.de",
-      "id": 361716411,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluessel-notdienst-24h.de",
-      "id": 361739309,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-24h.ch",
-      "id": 361710315,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "dersicherheitsprofi.de",
-      "id": 361723529,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "der-preiswerte-schluesseldienst.de",
-      "id": 361739484,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-nuernberg-24std.de",
-      "id": 361709206,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaerhilfe.de",
-      "id": 361716192,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung-spezialist.de",
-      "id": 375763517,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung-service.at",
-      "id": 361714746,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "24h-heizung-sanitaer.de",
-      "id": 355308099,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "heizung-sanitaerservice.ch",
-      "id": 361749767,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "heizung-defekt.de",
-      "id": 361712820,
       "report": {
         "Direct": "2"
       }
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
+      "label": "schlüsseldienst-in.com",
+      "id": 361744731,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "24h-tueroeffnung.de",
+      "id": 361716035,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "berlin-schluesseldienst.net",
+      "id": 361706707,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-fuer-wien.at",
+      "id": 361708141,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "aufsperrdienst-regional.de",
+      "id": 361742955,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-24std.at",
+      "id": 361723382,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "aufsperrdienst-24.de",
+      "id": 361732621,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "aufsperrdienst-deutschland.de",
+      "id": 361716411,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluessel-notdienst-24h.de",
+      "id": 361739309,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-24h.ch",
+      "id": 361710315,
+      "report": {
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "dersicherheitsprofi.de",
+      "id": 361723529,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "der-preiswerte-schluesseldienst.de",
+      "id": 361739484,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-nuernberg-24std.de",
+      "id": 361709206,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaerhilfe.de",
+      "id": 361716192,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigung-spezialist.de",
+      "id": 375763517,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigung-service.at",
+      "id": 361714746,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "24h-heizung-sanitaer.de",
+      "id": 355308099,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "heizung-sanitaerservice.ch",
+      "id": 361749767,
+      "report": {
+        "Direct": "2",
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "heizung-defekt.de",
+      "id": 361712820,
+      "report": {
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
       "label": "elektronotdienst-plus.de",
       "id": 361715393,
-      "report": {}
+      "report": {
+        "Direct": "1"
+      }
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "guenstiger-elektriker.de",
       "id": 361716190,
-      "report": {}
+      "report": {
+        "Direct": "1",
+        "Organic Search": "1"
+      }
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "Abflussreinigung-24.de",
       "id": 361706058,
       "report": {
@@ -159,2802 +181,1363 @@
       }
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "elektriker24-berlin.de",
       "id": 361731400,
       "report": {}
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "rohrreinigungsexperten.at",
       "id": 361747641,
       "report": {
-        "Organic Search": "2"
+        "Direct": "1"
       }
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "as-elektronotdienst.de",
       "id": 361694890,
       "report": {}
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "schädlingbekämpfung-in.com",
       "id": 361710673,
       "report": {}
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "schaedlingsbekaempfung-in.de",
       "id": 361724381,
       "report": {
-        "Organic Search": "1"
+        "Direct": "1"
       }
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "sanitaerservice-24.de",
       "id": 361722635,
       "report": {}
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "elektronotdienstservice.de",
       "id": 356459868,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektro-24std.de",
+      "id": 361719116,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektroservice-24std.at",
+      "id": 356492906,
+      "report": {
+        "Direct": "1",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektroanschlussexperten.de",
+      "id": 356507692,
+      "report": {
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "as-elektro-notdienst.de",
+      "id": 356471074,
+      "report": {
+        "Organic Search": "4",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "1a-elektroservice.at",
+      "id": 349636196,
+      "report": {
+        "Organic Search": "2",
+        "Unassigned": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "24elektroservice.de",
+      "id": 356471803,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "1a-elektroservice.de",
+      "id": 349631294,
+      "report": {
+        "Direct": "1",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektro-singer.de",
+      "id": 356471144,
+      "report": {
+        "Direct": "7",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "24elektroservice.at",
+      "id": 356507694,
+      "report": {
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-24h.de",
+      "id": 349609767,
+      "report": {
+        "Paid Search": "35",
+        "Organic Search": "9",
+        "Direct": "4",
+        "Unassigned": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-meier.de",
+      "id": 349581634,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektroschilling.de",
+      "id": 356497150,
+      "report": {
+        "Direct": "6",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-notdienst-24h.de",
+      "id": 356492910,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-hilfe.com",
+      "id": 356511070,
+      "report": {
+        "Organic Search": "3",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-frankfurt.net",
+      "id": 355367279,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-muenchen.net",
+      "id": 356471416,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-berlin.net",
+      "id": 355356621,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "24h-elektriker.de",
+      "id": 355328826,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaernotdienst-24h.de",
+      "id": 356473893,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "heizung-sanitaer-hilfe.ch",
+      "id": 356473493,
+      "report": {
+        "Direct": "2",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "heizung-sanitaer-hilfe.net",
+      "id": 356491601,
+      "report": {
+        "Direct": "19",
+        "Organic Search": "6"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "heizung-und-sanitaer-24h.ch",
+      "id": 356491209,
+      "report": {
+        "Direct": "2",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Sanitaer-nd.de",
+      "id": 358727015,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "klempner24h.de",
+      "id": 356472144,
+      "report": {
+        "Direct": "2",
+        "Organic Search": "1",
+        "Unassigned": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "ihr-klempner.de",
+      "id": 358722915,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Notdienst-sanitaer.de",
+      "id": 355327085,
+      "report": {
+        "Paid Search": "202",
+        "Organic Search": "6",
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "guenstiger-aufsperrdienst.de",
+      "id": 356506696,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "der-freundliche-schluesselservice.de",
+      "id": 355287937,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "de-aufsperrdienst.com",
+      "id": 355290510,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-notdienst.at",
+      "id": 358744102,
       "report": {
         "Organic Search": "2",
         "Direct": "1"
       }
     },
     {
-      "date": "2023-05-16",
-      "label": "elektro-24std.de",
-      "id": 361719116,
+      "date": "2023-05-25",
+      "label": "die-tuer-oeffner.de",
+      "id": 355302680,
+      "report": {
+        "Direct": "2",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "preiswerte-aufsperrdienst.at",
+      "id": 358737255,
+      "report": {
+        "Organic Search": "2",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-berlin-aufsperrdienst.de",
+      "id": 356492913,
       "report": {}
     },
     {
-      "date": "2023-05-16",
-      "label": "elektroservice-24std.at",
-      "id": 356492906,
+      "date": "2023-05-25",
+      "label": "handwerkerservice24h.de",
+      "id": 356474389,
+      "report": {
+        "Organic Search": "3",
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "glaserei-24.de",
+      "id": 356480680,
+      "report": {
+        "Organic Search": "4",
+        "Referral": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "malermeister-1a.de",
+      "id": 358724441,
+      "report": {
+        "Organic Search": "2",
+        "Unassigned": "2",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "insektenbekaempfung24.de",
+      "id": 358725790,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Insektenbekaempfung24h.de",
+      "id": 356477502,
       "report": {}
     },
     {
-      "date": "2023-05-16",
-      "label": "elektroanschlussexperten.de",
-      "id": 356507692,
+      "date": "2023-05-25",
+      "label": "kammerjaeger-plus.de",
+      "id": 358731549,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "de-elektroservice.de",
+      "id": 356485656,
       "report": {}
     },
     {
-      "date": "2023-05-16",
-      "label": "as-elektro-notdienst.de",
-      "id": 356471074,
+      "date": "2023-05-25",
+      "label": "elektronotdienst-tag-und-nacht.de",
+      "id": 356491206,
+      "report": {
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "guenstige-elektriker.de",
+      "id": 356505853,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrbruch-reparatur.de",
+      "id": 358735474,
+      "report": {
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigung-in.com",
+      "id": 358727575,
+      "report": {
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "ROHRBRUCH-EXPERTEN.DE",
+      "id": 358728699,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-tag-nacht.de",
+      "id": 358727576,
+      "report": {
+        "Direct": "4"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "notdienst-deutschland.de",
+      "id": 358744099,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "1a-heizungsservice.de",
+      "id": 358737182,
+      "report": {
+        "Organic Search": "8",
+        "Direct": "1",
+        "Paid Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "1a-sanitaerservice.de",
+      "id": 358732454,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "klempner-notdienst.com",
+      "id": 359803078,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektro-service-24h.de",
+      "id": 358747626,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaerservice24.at",
+      "id": 359774327,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigungsexperten.de",
+      "id": 359788650,
+      "report": {
+        "Organic Search": "1",
+        "Unassigned": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaerservice.at",
+      "id": 359850129,
+      "report": {
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-service-huber.de",
+      "id": 359774013,
+      "report": {
+        "Organic Search": "13",
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-service-fischer.de",
+      "id": 359764921,
+      "report": {
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-service-kessler.de",
+      "id": 359817752,
+      "report": {
+        "Organic Search": "2",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-notdienst-service.de",
+      "id": 359778249,
+      "report": {
+        "Direct": "1",
+        "Organic Search": "1",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Express-klempner.de",
+      "id": 358731335,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "express-klempner.at",
+      "id": 358733700,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "guenstiger-sanitaerservice.de",
+      "id": 358746082,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "der-sanitaerservice.de",
+      "id": 358728409,
+      "report": {
+        "Direct": "2",
+        "Unassigned": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-service-24.de",
+      "id": 359790384,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-service-loeffler.de",
+      "id": 359840895,
+      "report": {
+        "Organic Search": "2",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-service-24h.de",
+      "id": 359853424,
+      "report": {
+        "Direct": "2",
+        "Unassigned": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "guenstiger-sanitaerservice.at",
+      "id": 358749154,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-notdienst.ch",
+      "id": 359781487,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaernotdienst-24h.ch",
+      "id": 359765617,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigungsexperten.ch",
+      "id": 359817742,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "aufsperrdienst-vorort.de",
+      "id": 358730773,
+      "report": {
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "as-schluessel-dienst.de",
+      "id": 358735479,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schlüsselmeier.de",
+      "id": 359804733,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "shs-schaedlingsbekaempfung.de",
+      "id": 359800385,
+      "report": {
+        "Organic Search": "7",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-in.com",
+      "id": 358731974,
+      "report": {
+        "Organic Search": "11",
+        "Direct": "8"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektrogarantie-de.de",
+      "id": 358729439,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "haustechnik-seibel.de",
+      "id": 358736048,
+      "report": {
+        "Organic Search": "34",
+        "Direct": "5"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "anti-schimmel.net",
+      "id": 358735411,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesselmeier.de",
+      "id": 375847884,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigung24h.at",
+      "id": 375846521,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "wasserschaden-hilfe.net",
+      "id": 359807853,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrbruchexperten.de",
+      "id": 359763909,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "der-schaedlingsbekaempfer.com",
+      "id": 358738528,
+      "report": {
+        "Direct": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "bio-kammerjäger.com",
+      "id": 358729099,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "kammerjäger-in.com",
+      "id": 358748836,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-24-std.de",
+      "id": 359848470,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schlüsseldienst-24.de",
+      "id": 359848471,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Schaedlingsbekaempfung-24.at",
+      "id": 355319630,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Schaedlinge-nicht-bei-mir.de",
+      "id": 355363239,
+      "report": {
+        "Organic Search": "2",
+        "Direct": "1",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Wespen-beseitigen.de",
+      "id": 355361722,
+      "report": {
+        "Organic Search": "39",
+        "Direct": "4",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Ungeziefer-bekaempfen.de",
+      "id": 355308515,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Kammerjaeger-Huber.de",
+      "id": 355359412,
+      "report": {
+        "Organic Search": "130",
+        "Direct": "14",
+        "Referral": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Bio-Kammerjaeger.de",
+      "id": 355280718,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Bio-Kammerjaeger.at",
+      "id": 355308401,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Kammerjaeger-In.de",
+      "id": 355360521,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Bio-Kammerjaeger.ch",
+      "id": 355293284,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Schaedlinge-Weg.at",
+      "id": 355321433,
+      "report": {
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Schaedlinge-Weg.ch",
+      "id": 355306411,
+      "report": {
+        "Direct": "5"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Notdienst-Heizung-Sanitaer.de",
+      "id": 355287930,
+      "report": {
+        "Organic Search": "12",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "ZSG-Fuechse.de",
+      "id": 355356618,
+      "report": {
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Deutscher-Elektrotechnikerverband.de",
+      "id": 355311460,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "Schaedlingsbekaempfung-24.ch",
+      "id": 355301777,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-helfer.at",
+      "id": 355305796,
+      "report": {
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanierung-wagner.de",
+      "id": 358725480,
+      "report": {
+        "Organic Search": "12",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-notdienst-24h.ch",
+      "id": 356497993,
+      "report": {
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "1a-elektroservice.ch",
+      "id": 356501968,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "installateur-huber.de",
+      "id": 355301770,
+      "report": {
+        "Organic Search": "28",
+        "Direct": "1",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "installateur-singer.de",
+      "id": 356484417,
+      "report": {
+        "Organic Search": "9",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektriker-plus.de",
+      "id": 356501886,
+      "report": {
+        "Organic Search": "1",
+        "Referral": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schaedlingsbekaempfung-24h.de",
+      "id": 356473894,
+      "report": {
+        "Paid Search": "13",
+        "Organic Search": "9",
+        "Referral": "2",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigung-express.de",
+      "id": 355311454,
+      "report": {
+        "Organic Search": "5",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schlüsseldienst-fischer.de",
+      "id": 359801188,
       "report": {
         "Organic Search": "7"
       }
     },
     {
-      "date": "2023-05-16",
-      "label": "1a-elektroservice.at",
-      "id": 349636196,
-      "report": {
-        "Organic Search": "10"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "24elektroservice.de",
-      "id": 356471803,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "1a-elektroservice.de",
-      "id": 349631294,
-      "report": {
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektro-singer.de",
-      "id": 356471144,
-      "report": {
-        "Organic Search": "2",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "24elektroservice.at",
-      "id": 356507694,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-24h.de",
-      "id": 349609767,
-      "report": {
-        "Paid Search": "27",
-        "Organic Search": "7",
-        "Direct": "3",
-        "Unassigned": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-meier.de",
-      "id": 349581634,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektroschilling.de",
-      "id": 356497150,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-notdienst-24h.de",
-      "id": 356492910,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-hilfe.com",
-      "id": 356511070,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-frankfurt.net",
-      "id": 355367279,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-muenchen.net",
-      "id": 356471416,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-berlin.net",
-      "id": 355356621,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "24h-elektriker.de",
-      "id": 355328826,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaernotdienst-24h.de",
-      "id": 356473893,
-      "report": {
-        "Direct": "4"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "heizung-sanitaer-hilfe.ch",
-      "id": 356473493,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "heizung-sanitaer-hilfe.net",
-      "id": 356491601,
-      "report": {
-        "Direct": "12",
-        "Organic Search": "9"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "heizung-und-sanitaer-24h.ch",
-      "id": 356491209,
-      "report": {
-        "Organic Search": "3",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Sanitaer-nd.de",
-      "id": 358727015,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "klempner24h.de",
-      "id": 356472144,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "ihr-klempner.de",
-      "id": 358722915,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Notdienst-sanitaer.de",
-      "id": 355327085,
-      "report": {
-        "Paid Search": "233",
-        "Direct": "11",
-        "Organic Search": "3"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "guenstiger-aufsperrdienst.de",
-      "id": 356506696,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "der-freundliche-schluesselservice.de",
-      "id": 355287937,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "de-aufsperrdienst.com",
-      "id": 355290510,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-notdienst.at",
-      "id": 358744102,
-      "report": {
-        "Organic Search": "5"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "die-tuer-oeffner.de",
-      "id": 355302680,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "preiswerte-aufsperrdienst.at",
-      "id": 358737255,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-berlin-aufsperrdienst.de",
-      "id": 356492913,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "handwerkerservice24h.de",
-      "id": 356474389,
-      "report": {
-        "Organic Search": "4",
-        "Direct": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "glaserei-24.de",
-      "id": 356480680,
-      "report": {
-        "Organic Search": "6",
-        "Direct": "4"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "malermeister-1a.de",
-      "id": 358724441,
-      "report": {
-        "Organic Search": "5"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "insektenbekaempfung24.de",
-      "id": 358725790,
-      "report": {
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Insektenbekaempfung24h.de",
-      "id": 356477502,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "kammerjaeger-plus.de",
-      "id": 358731549,
-      "report": {
-        "Organic Search": "5",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "de-elektroservice.de",
-      "id": 356485656,
-      "report": {
-        "Organic Search": "2",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektronotdienst-tag-und-nacht.de",
-      "id": 356491206,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "guenstige-elektriker.de",
-      "id": 356505853,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrbruch-reparatur.de",
-      "id": 358735474,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung-in.com",
-      "id": 358727575,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "ROHRBRUCH-EXPERTEN.DE",
-      "id": 358728699,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-tag-nacht.de",
-      "id": 358727576,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "notdienst-deutschland.de",
-      "id": 358744099,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "1a-heizungsservice.de",
-      "id": 358737182,
-      "report": {
-        "Organic Search": "14",
-        "Direct": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "1a-sanitaerservice.de",
-      "id": 358732454,
-      "report": {
-        "Direct": "2",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "klempner-notdienst.com",
-      "id": 359803078,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektro-service-24h.de",
-      "id": 358747626,
-      "report": {
-        "Direct": "2",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaerservice24.at",
-      "id": 359774327,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigungsexperten.de",
-      "id": 359788650,
-      "report": {
-        "Organic Search": "5",
-        "Direct": "3"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaerservice.at",
-      "id": 359850129,
-      "report": {
-        "Organic Search": "9"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-service-huber.de",
-      "id": 359774013,
-      "report": {
-        "Organic Search": "10"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-service-fischer.de",
-      "id": 359764921,
-      "report": {
-        "Organic Search": "2",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-service-kessler.de",
-      "id": 359817752,
-      "report": {
-        "Organic Search": "3",
-        "Direct": "1",
-        "Paid Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-notdienst-service.de",
-      "id": 359778249,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Express-klempner.de",
-      "id": 358731335,
-      "report": {
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-klempner.at",
-      "id": 358733700,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "guenstiger-sanitaerservice.de",
-      "id": 358746082,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "der-sanitaerservice.de",
-      "id": 358728409,
-      "report": {
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-service-24.de",
-      "id": 359790384,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-service-loeffler.de",
-      "id": 359840895,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-service-24h.de",
-      "id": 359853424,
-      "report": {
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "guenstiger-sanitaerservice.at",
-      "id": 358749154,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-notdienst.ch",
-      "id": 359781487,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaernotdienst-24h.ch",
-      "id": 359765617,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigungsexperten.ch",
-      "id": 359817742,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "aufsperrdienst-vorort.de",
-      "id": 358730773,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "as-schluessel-dienst.de",
-      "id": 358735479,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schlüsselmeier.de",
-      "id": 359804733,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "shs-schaedlingsbekaempfung.de",
-      "id": 359800385,
-      "report": {
-        "Organic Search": "3"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-in.com",
-      "id": 358731974,
-      "report": {
-        "Organic Search": "11",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektrogarantie-de.de",
-      "id": 358729439,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "haustechnik-seibel.de",
-      "id": 358736048,
-      "report": {
-        "Organic Search": "46",
-        "Direct": "14",
-        "Unassigned": "5",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "anti-schimmel.net",
-      "id": 358735411,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesselmeier.de",
-      "id": 375847884,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung24h.at",
-      "id": 375846521,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "wasserschaden-hilfe.net",
-      "id": 359807853,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrbruchexperten.de",
-      "id": 359763909,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "der-schaedlingsbekaempfer.com",
-      "id": 358738528,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "bio-kammerjäger.com",
-      "id": 358729099,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "kammerjäger-in.com",
-      "id": 358748836,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-24-std.de",
-      "id": 359848470,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schlüsseldienst-24.de",
-      "id": 359848471,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Schaedlingsbekaempfung-24.at",
-      "id": 355319630,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Schaedlinge-nicht-bei-mir.de",
-      "id": 355363239,
-      "report": {
-        "Organic Search": "2",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Wespen-beseitigen.de",
-      "id": 355361722,
-      "report": {
-        "Organic Search": "13",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Ungeziefer-bekaempfen.de",
-      "id": 355308515,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Kammerjaeger-Huber.de",
-      "id": 355359412,
-      "report": {
-        "Organic Search": "173",
-        "Direct": "13"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Bio-Kammerjaeger.de",
-      "id": 355280718,
-      "report": {
-        "Organic Search": "3",
-        "Direct": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Bio-Kammerjaeger.at",
-      "id": 355308401,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Kammerjaeger-In.de",
-      "id": 355360521,
-      "report": {
-        "Referral": "4",
-        "Direct": "2",
-        "Paid Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Bio-Kammerjaeger.ch",
-      "id": 355293284,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Schaedlinge-Weg.at",
-      "id": 355321433,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Schaedlinge-Weg.ch",
-      "id": 355306411,
-      "report": {
-        "Referral": "2",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Notdienst-Heizung-Sanitaer.de",
-      "id": 355287930,
-      "report": {
-        "Organic Search": "20",
-        "Direct": "5",
-        "Organic Social": "2",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "ZSG-Fuechse.de",
-      "id": 355356618,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Deutscher-Elektrotechnikerverband.de",
-      "id": 355311460,
-      "report": {
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "Schaedlingsbekaempfung-24.ch",
-      "id": 355301777,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-helfer.at",
-      "id": 355305796,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanierung-wagner.de",
-      "id": 358725480,
-      "report": {
-        "Organic Search": "7",
-        "Direct": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-notdienst-24h.ch",
-      "id": 356497993,
-      "report": {
-        "Organic Search": "6",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "1a-elektroservice.ch",
-      "id": 356501968,
-      "report": {
-        "Direct": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "installateur-huber.de",
-      "id": 355301770,
-      "report": {
-        "Organic Search": "37",
-        "Direct": "2",
-        "Referral": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "installateur-singer.de",
-      "id": 356484417,
-      "report": {
-        "Organic Search": "4",
-        "Referral": "3",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-plus.de",
-      "id": 356501886,
-      "report": {
-        "Organic Search": "2",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schaedlingsbekaempfung-24h.de",
-      "id": 356473894,
-      "report": {
-        "Paid Search": "12",
-        "Organic Search": "8"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung-express.de",
-      "id": 355311454,
-      "report": {
-        "Organic Search": "5",
-        "Direct": "2",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schlüsseldienst-fischer.de",
-      "id": 359801188,
-      "report": {
-        "Organic Search": "9"
-      }
-    },
-    {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "corona-desinfizierung.de",
       "id": 349651994,
       "report": {
-        "Paid Search": "100",
-        "Organic Search": "23",
-        "Direct": "7",
-        "Referral": "3"
+        "Paid Search": "91",
+        "Organic Search": "17",
+        "Direct": "3"
       }
     },
     {
-      "date": "2023-05-16",
+      "date": "2023-05-25",
       "label": "xn--aunds-schlsseldienst-yec.de/schluesseldienst/",
       "id": 262287788,
       "report": {
-        "Organic Search": "2",
-        "Referral": "2",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "dfh-gmbh.net",
-      "id": 375856925,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "dhe-technik.de",
-      "id": 364852659,
-      "report": {
-        "Organic Search": "1",
-        "Organic Social": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "die-aufsperrengel.de",
-      "id": 366493182,
-      "report": {
-        "Organic Search": "25",
-        "Direct": "4",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektrikernotdienst24.com",
-      "id": 365136459,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektro-notdienst-24.de",
-      "id": 367054546,
-      "report": {
-        "Organic Search": "25",
-        "Direct": "3"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektro-notdienst24.at",
-      "id": 366879035,
-      "report": {
-        "Organic Search": "16",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektroservice-plus.de",
-      "id": 366839706,
-      "report": {
-        "Organic Search": "11",
-        "Direct": "3",
-        "Organic Social": "2",
-        "Paid Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-elektronotdienst.de",
-      "id": 367790553,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-kammerjaeger.de",
-      "id": 364280998,
-      "report": {
-        "Organic Search": "17",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-polsterreinigung.de",
-      "id": 375856286,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-sanitaernotdienst.de",
-      "id": 366584253,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-sathilfe.de",
-      "id": 367430795,
-      "report": {
-        "Organic Search": "10",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-schaedlingsbekaempfung.at",
-      "id": 375862284,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-schaedlingsbekaempfung.de",
-      "id": 366992546,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-schaedlingsbekaempfung.ch",
-      "id": 365036454,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-teppichreinigung.de",
-      "id": 366793730,
-      "report": {
-        "Organic Search": "22",
-        "Referral": "3",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "express-sanitaernotdienst.at",
-      "id": 366584253,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaerservice-plus.de/",
-      "id": 365725320,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "heizungservice-plus.de",
-      "id": 375856530,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "www.afl-schluesseldienst.de",
-      "id": 366598930,
-      "report": {
-        "Organic Search": "43",
-        "Direct": "4",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "www.elektriker-24std.de",
-      "id": 365681132,
-      "report": {
-        "Organic Search": "17",
-        "Direct": "3"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "www.polsterreinigung-teppichreinigung-strauss.de",
-      "id": 366616060,
-      "report": {
-        "Organic Search": "58",
-        "Direct": "7",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "www.rohrreinigung-24std.de",
-      "id": 366391817,
-      "report": {
-        "Organic Search": "12",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "www.sanitaernotdienst-24std.de",
-      "id": 366334465,
-      "report": {
-        "Organic Search": "37",
-        "Direct": "5"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "www.slotenmaker-adriaans.nl/",
-      "id": 366098850,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "installateur-24std.de/",
-      "id": 365067690,
-      "report": {
-        "Organic Search": "8",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "klempnerservice-plus.de",
-      "id": 368420243,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "mannstaedt.net",
-      "id": 364486970,
-      "report": {
-        "Organic Search": "24",
-        "Direct": "3",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "notdienst-sanitaer-heizung.de",
-      "id": 364530650,
-      "report": {
-        "Organic Search": "3",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "ozon-desinfektion24.de",
-      "id": 364613983,
-      "report": {
-        "Organic Search": "18",
-        "Direct": "6"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung-24std.at",
-      "id": 367712864,
-      "report": {
-        "Organic Search": "5"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung-24std.ch",
-      "id": 375858706,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "rohrreinigung-expert.de",
-      "id": 366578512,
-      "report": {
-        "Paid Search": "627",
-        "Direct": "11",
-        "Organic Search": "9"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-notdienst-24.de",
-      "id": 262600988,
-      "report": {
-        "Organic Search": "3",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sanitaer-notdienst24.at",
-      "id": 365155317,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "sat-koenig.de",
-      "id": 368376294,
-      "report": {
-        "Organic Search": "41",
-        "Direct": "5"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-koenig.de",
-      "id": 364373002,
-      "report": {
-        "Organic Search": "3"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesselprofi24.de",
-      "id": 364681445,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-hilfe.at",
-      "id": 365499849,
-      "report": {
-        "Organic Search": "12",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-koenig.com",
-      "id": 375835085,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schluesseldienst-service.ch",
-      "id": 366586349,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "wespennestentfernen24.de/",
-      "id": 367982066,
-      "report": {
-        "Organic Search": "9",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "xattack-schaedlingsbekaempfung.at",
-      "id": 365407271,
-      "report": {
-        "Organic Search": "3"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "xattack-schaedlingsbekaempfung.ch",
-      "id": 366896813,
-      "report": {
-        "Organic Search": "11"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "xattack-schaedlingsbekaempfung.de",
-      "id": 364368320,
-      "report": {
-        "Organic Search": "10",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "echeck-service.de",
-      "id": 356466146,
-      "report": {
-        "Organic Search": "4",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "elektriker-notdienst24h.de",
-      "id": 353204046,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-16",
-      "label": "schlüsseldienst-berlin-notdienst.de",
-      "id": 358722370,
-      "report": {}
-    },
-    {
-      "date": "2023-05-16",
-      "label": "kammerjaeger-huber.at",
-      "id": 358736172,
-      "report": {
-        "Organic Search": "5",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "as-schluesseldienst-muenchen.de",
-      "id": 361725684,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-365-tage.de",
-      "id": 361722637,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "key-notservice.de",
-      "id": 361719658,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schlüsseldienst-in.com",
-      "id": 361744731,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "24h-tueroeffnung.de",
-      "id": 361716035,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "berlin-schluesseldienst.net",
-      "id": 361706707,
-      "report": {
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-fuer-wien.at",
-      "id": 361708141,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "aufsperrdienst-regional.de",
-      "id": 361742955,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-24std.at",
-      "id": 361723382,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "aufsperrdienst-24.de",
-      "id": 361732621,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "aufsperrdienst-deutschland.de",
-      "id": 361716411,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluessel-notdienst-24h.de",
-      "id": 361739309,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-24h.ch",
-      "id": 361710315,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "dersicherheitsprofi.de",
-      "id": 361723529,
-      "report": {
-        "Organic Search": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "der-preiswerte-schluesseldienst.de",
-      "id": 361739484,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-nuernberg-24std.de",
-      "id": 361709206,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaerhilfe.de",
-      "id": 361716192,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung-spezialist.de",
-      "id": 375763517,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung-service.at",
-      "id": 361714746,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "24h-heizung-sanitaer.de",
-      "id": 355308099,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "heizung-sanitaerservice.ch",
-      "id": 361749767,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "heizung-defekt.de",
-      "id": 361712820,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektronotdienst-plus.de",
-      "id": 361715393,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "guenstiger-elektriker.de",
-      "id": 361716190,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Abflussreinigung-24.de",
-      "id": 361706058,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker24-berlin.de",
-      "id": 361731400,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigungsexperten.at",
-      "id": 361747641,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "as-elektronotdienst.de",
-      "id": 361694890,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schädlingbekämpfung-in.com",
-      "id": 361710673,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schaedlingsbekaempfung-in.de",
-      "id": 361724381,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaerservice-24.de",
-      "id": 361722635,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektronotdienstservice.de",
-      "id": 356459868,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektro-24std.de",
-      "id": 361719116,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektroservice-24std.at",
-      "id": 356492906,
-      "report": {
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektroanschlussexperten.de",
-      "id": 356507692,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "as-elektro-notdienst.de",
-      "id": 356471074,
-      "report": {
-        "Organic Search": "6",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "1a-elektroservice.at",
-      "id": 349636196,
-      "report": {
-        "Unassigned": "10",
-        "Organic Search": "9",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "24elektroservice.de",
-      "id": 356471803,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "1a-elektroservice.de",
-      "id": 349631294,
-      "report": {
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektro-singer.de",
-      "id": 356471144,
-      "report": {
-        "Organic Search": "2",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "24elektroservice.at",
-      "id": 356507694,
-      "report": {
-        "Organic Search": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-24h.de",
-      "id": 349609767,
-      "report": {
-        "Organic Search": "39",
-        "Paid Search": "26",
-        "Direct": "3"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-meier.de",
-      "id": 349581634,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektroschilling.de",
-      "id": 356497150,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-notdienst-24h.de",
-      "id": 356492910,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-hilfe.com",
-      "id": 356511070,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-frankfurt.net",
-      "id": 355367279,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-muenchen.net",
-      "id": 356471416,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-berlin.net",
-      "id": 355356621,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "24h-elektriker.de",
-      "id": 355328826,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaernotdienst-24h.de",
-      "id": 356473893,
-      "report": {
-        "Direct": "2",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "heizung-sanitaer-hilfe.ch",
-      "id": 356473493,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "heizung-sanitaer-hilfe.net",
-      "id": 356491601,
-      "report": {
-        "Direct": "7",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "heizung-und-sanitaer-24h.ch",
-      "id": 356491209,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Sanitaer-nd.de",
-      "id": 358727015,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "klempner24h.de",
-      "id": 356472144,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "ihr-klempner.de",
-      "id": 358722915,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Notdienst-sanitaer.de",
-      "id": 355327085,
-      "report": {
-        "Paid Search": "179",
-        "Direct": "8",
-        "Organic Search": "7",
-        "Referral": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "guenstiger-aufsperrdienst.de",
-      "id": 356506696,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "der-freundliche-schluesselservice.de",
-      "id": 355287937,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "de-aufsperrdienst.com",
-      "id": 355290510,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-notdienst.at",
-      "id": 358744102,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "die-tuer-oeffner.de",
-      "id": 355302680,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "preiswerte-aufsperrdienst.at",
-      "id": 358737255,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-berlin-aufsperrdienst.de",
-      "id": 356492913,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "handwerkerservice24h.de",
-      "id": 356474389,
-      "report": {
-        "Organic Search": "5"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "glaserei-24.de",
-      "id": 356480680,
-      "report": {
-        "Organic Search": "7",
-        "Direct": "3"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "malermeister-1a.de",
-      "id": 358724441,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "insektenbekaempfung24.de",
-      "id": 358725790,
-      "report": {
-        "Direct": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Insektenbekaempfung24h.de",
-      "id": 356477502,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "kammerjaeger-plus.de",
-      "id": 358731549,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "de-elektroservice.de",
-      "id": 356485656,
-      "report": {
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektronotdienst-tag-und-nacht.de",
-      "id": 356491206,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "guenstige-elektriker.de",
-      "id": 356505853,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrbruch-reparatur.de",
-      "id": 358735474,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung-in.com",
-      "id": 358727575,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "ROHRBRUCH-EXPERTEN.DE",
-      "id": 358728699,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-tag-nacht.de",
-      "id": 358727576,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "notdienst-deutschland.de",
-      "id": 358744099,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "1a-heizungsservice.de",
-      "id": 358737182,
-      "report": {
-        "Organic Search": "6",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "1a-sanitaerservice.de",
-      "id": 358732454,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "klempner-notdienst.com",
-      "id": 359803078,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektro-service-24h.de",
-      "id": 358747626,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaerservice24.at",
-      "id": 359774327,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigungsexperten.de",
-      "id": 359788650,
-      "report": {
-        "Organic Search": "5",
-        "Direct": "2",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaerservice.at",
-      "id": 359850129,
-      "report": {
-        "Organic Search": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-service-huber.de",
-      "id": 359774013,
-      "report": {
-        "Organic Search": "8",
-        "Unassigned": "6"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-service-fischer.de",
-      "id": 359764921,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-service-kessler.de",
-      "id": 359817752,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-notdienst-service.de",
-      "id": 359778249,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Express-klempner.de",
-      "id": 358731335,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "express-klempner.at",
-      "id": 358733700,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "guenstiger-sanitaerservice.de",
-      "id": 358746082,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "der-sanitaerservice.de",
-      "id": 358728409,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-service-24.de",
-      "id": 359790384,
-      "report": {
-        "Direct": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-service-loeffler.de",
-      "id": 359840895,
-      "report": {
-        "Direct": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-service-24h.de",
-      "id": 359853424,
-      "report": {
-        "Organic Search": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "guenstiger-sanitaerservice.at",
-      "id": 358749154,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-notdienst.ch",
-      "id": 359781487,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaernotdienst-24h.ch",
-      "id": 359765617,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigungsexperten.ch",
-      "id": 359817742,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "aufsperrdienst-vorort.de",
-      "id": 358730773,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "as-schluessel-dienst.de",
-      "id": 358735479,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schlüsselmeier.de",
-      "id": 359804733,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "shs-schaedlingsbekaempfung.de",
-      "id": 359800385,
-      "report": {
-        "Organic Search": "4"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-in.com",
-      "id": 358731974,
-      "report": {
-        "Organic Search": "6",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektrogarantie-de.de",
-      "id": 358729439,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "haustechnik-seibel.de",
-      "id": 358736048,
-      "report": {
-        "Organic Search": "59",
-        "Direct": "17",
         "Unassigned": "2",
-        "Organic Social": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "anti-schimmel.net",
-      "id": 358735411,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesselmeier.de",
-      "id": 375847884,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung24h.at",
-      "id": 375846521,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "wasserschaden-hilfe.net",
-      "id": 359807853,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrbruchexperten.de",
-      "id": 359763909,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "der-schaedlingsbekaempfer.com",
-      "id": 358738528,
-      "report": {
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "bio-kammerjäger.com",
-      "id": 358729099,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "kammerjäger-in.com",
-      "id": 358748836,
-      "report": {
         "Organic Search": "1"
       }
     },
     {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-24-std.de",
-      "id": 359848470,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schlüsseldienst-24.de",
-      "id": 359848471,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Schaedlingsbekaempfung-24.at",
-      "id": 355319630,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Schaedlinge-nicht-bei-mir.de",
-      "id": 355363239,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Wespen-beseitigen.de",
-      "id": 355361722,
-      "report": {
-        "Organic Search": "19",
-        "Direct": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Ungeziefer-bekaempfen.de",
-      "id": 355308515,
-      "report": {
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Kammerjaeger-Huber.de",
-      "id": 355359412,
-      "report": {
-        "Organic Search": "119",
-        "Direct": "17",
-        "Unassigned": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Bio-Kammerjaeger.de",
-      "id": 355280718,
-      "report": {
-        "Organic Search": "3"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Bio-Kammerjaeger.at",
-      "id": 355308401,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Kammerjaeger-In.de",
-      "id": 355360521,
-      "report": {
-        "Organic Search": "3",
-        "Direct": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Bio-Kammerjaeger.ch",
-      "id": 355293284,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Schaedlinge-Weg.at",
-      "id": 355321433,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Schaedlinge-Weg.ch",
-      "id": 355306411,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Notdienst-Heizung-Sanitaer.de",
-      "id": 355287930,
-      "report": {
-        "Organic Search": "13",
-        "Direct": "3",
-        "Organic Social": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "ZSG-Fuechse.de",
-      "id": 355356618,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Deutscher-Elektrotechnikerverband.de",
-      "id": 355311460,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "Schaedlingsbekaempfung-24.ch",
-      "id": 355301777,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-helfer.at",
-      "id": 355305796,
-      "report": {
-        "Organic Search": "1",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanierung-wagner.de",
-      "id": 358725480,
-      "report": {
-        "Organic Search": "10",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-notdienst-24h.ch",
-      "id": 356497993,
-      "report": {
-        "Organic Search": "6",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "1a-elektroservice.ch",
-      "id": 356501968,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "installateur-huber.de",
-      "id": 355301770,
-      "report": {
-        "Organic Search": "31",
-        "Referral": "2",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "installateur-singer.de",
-      "id": 356484417,
-      "report": {
-        "Organic Search": "7",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektriker-plus.de",
-      "id": 356501886,
-      "report": {
-        "Organic Search": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schaedlingsbekaempfung-24h.de",
-      "id": 356473894,
-      "report": {
-        "Paid Search": "15",
-        "Organic Search": "9",
-        "Referral": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung-express.de",
-      "id": 355311454,
-      "report": {
-        "Organic Search": "8",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schlüsseldienst-fischer.de",
-      "id": 359801188,
-      "report": {
-        "Organic Search": "9"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "corona-desinfizierung.de",
-      "id": 349651994,
-      "report": {
-        "Paid Search": "87",
-        "Organic Search": "21",
-        "Direct": "10",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "xn--aunds-schlsseldienst-yec.de/schluesseldienst/",
-      "id": 262287788,
-      "report": {
-        "Direct": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "dfh-gmbh.net",
       "id": 375856925,
       "report": {}
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "dhe-technik.de",
       "id": 364852659,
-      "report": {}
+      "report": {
+        "Direct": "1",
+        "Organic Search": "1",
+        "Unassigned": "1"
+      }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "die-aufsperrengel.de",
       "id": 366493182,
       "report": {
-        "Organic Search": "20",
-        "Direct": "2"
+        "Organic Search": "30",
+        "Direct": "1"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "elektrikernotdienst24.com",
       "id": 365136459,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektro-notdienst-24.de",
-      "id": 367054546,
-      "report": {
-        "Organic Search": "19",
-        "Unassigned": "12",
-        "Direct": "3"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektro-notdienst24.at",
-      "id": 366879035,
-      "report": {
-        "Organic Search": "21",
-        "Unassigned": "15"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "elektroservice-plus.de",
-      "id": 366839706,
-      "report": {
-        "Organic Search": "7",
-        "Direct": "1",
-        "Paid Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "express-elektronotdienst.de",
-      "id": 367790553,
       "report": {}
     },
     {
-      "date": "2023-05-17",
-      "label": "express-kammerjaeger.de",
-      "id": 364280998,
+      "date": "2023-05-25",
+      "label": "elektro-notdienst-24.de",
+      "id": 367054546,
       "report": {
-        "Organic Search": "7",
+        "Organic Search": "13",
         "Unassigned": "4",
         "Direct": "1"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
+      "label": "elektro-notdienst24.at",
+      "id": 366879035,
+      "report": {
+        "Organic Search": "16",
+        "Unassigned": "7"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "elektroservice-plus.de",
+      "id": 366839706,
+      "report": {
+        "Direct": "3",
+        "Organic Search": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "express-elektronotdienst.de",
+      "id": 367790553,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "express-kammerjaeger.de",
+      "id": 364280998,
+      "report": {
+        "Organic Search": "8",
+        "Unassigned": "3",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
       "label": "express-polsterreinigung.de",
       "id": 375856286,
       "report": {}
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "express-sanitaernotdienst.de",
       "id": 366584253,
       "report": {
-        "Organic Search": "1",
-        "Unassigned": "1"
+        "Organic Search": "1"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "express-sathilfe.de",
       "id": 367430795,
       "report": {
-        "Unassigned": "6",
-        "Organic Search": "3"
+        "Organic Search": "4",
+        "Unassigned": "2",
+        "Direct": "1"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "express-schaedlingsbekaempfung.at",
       "id": 375862284,
       "report": {}
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "express-schaedlingsbekaempfung.de",
       "id": 366992546,
-      "report": {}
+      "report": {
+        "Organic Search": "2",
+        "Direct": "1"
+      }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "express-schaedlingsbekaempfung.ch",
       "id": 365036454,
       "report": {
-        "Organic Search": "5"
+        "Direct": "1",
+        "Organic Search": "1"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "express-teppichreinigung.de",
       "id": 366793730,
       "report": {
-        "Organic Search": "20",
-        "Unassigned": "13",
-        "Direct": "4"
+        "Organic Search": "17",
+        "Unassigned": "5",
+        "Direct": "3"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "express-sanitaernotdienst.at",
       "id": 366584253,
       "report": {
-        "Organic Search": "1",
-        "Unassigned": "1"
+        "Organic Search": "1"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "sanitaerservice-plus.de/",
       "id": 365725320,
-      "report": {}
+      "report": {
+        "Direct": "1"
+      }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "heizungservice-plus.de",
       "id": 375856530,
       "report": {}
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "www.afl-schluesseldienst.de",
       "id": 366598930,
       "report": {
-        "Organic Search": "45",
-        "Unassigned": "19",
-        "Direct": "4"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "www.elektriker-24std.de",
-      "id": 365681132,
-      "report": {
-        "Organic Search": "16",
+        "Organic Search": "18",
+        "Unassigned": "11",
         "Direct": "1"
       }
     },
     {
-      "date": "2023-05-17",
-      "label": "www.polsterreinigung-teppichreinigung-strauss.de",
-      "id": 366616060,
+      "date": "2023-05-25",
+      "label": "www.elektriker-24std.de",
+      "id": 365681132,
       "report": {
-        "Organic Search": "42",
-        "Direct": "7"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "www.rohrreinigung-24std.de",
-      "id": 366391817,
-      "report": {
-        "Organic Search": "10",
-        "Unassigned": "7",
-        "Direct": "4"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "www.sanitaernotdienst-24std.de",
-      "id": 366334465,
-      "report": {
-        "Organic Search": "35",
-        "Unassigned": "17",
+        "Organic Search": "15",
         "Direct": "3"
       }
     },
     {
-      "date": "2023-05-17",
-      "label": "www.slotenmaker-adriaans.nl/",
-      "id": 366098850,
-      "report": {}
+      "date": "2023-05-25",
+      "label": "www.polsterreinigung-teppichreinigung-strauss.de",
+      "id": 366616060,
+      "report": {
+        "Organic Search": "39",
+        "Direct": "4"
+      }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
+      "label": "www.rohrreinigung-24std.de",
+      "id": 366391817,
+      "report": {
+        "Organic Search": "8",
+        "Unassigned": "4",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "www.sanitaernotdienst-24std.de",
+      "id": 366334465,
+      "report": {
+        "Organic Search": "15",
+        "Unassigned": "4",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "www.slotenmaker-adriaans.nl/",
+      "id": 366098850,
+      "report": {
+        "Organic Search": "2",
+        "Unassigned": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
       "label": "installateur-24std.de/",
       "id": 365067690,
       "report": {
-        "Organic Search": "7",
+        "Organic Search": "12",
         "Direct": "1"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "klempnerservice-plus.de",
       "id": 368420243,
-      "report": {
-        "Direct": "2",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "mannstaedt.net",
-      "id": 364486970,
-      "report": {
-        "Organic Search": "19",
-        "Unassigned": "12",
-        "Direct": "2"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "notdienst-sanitaer-heizung.de",
-      "id": 364530650,
-      "report": {
-        "Organic Search": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "ozon-desinfektion24.de",
-      "id": 364613983,
-      "report": {
-        "Organic Search": "16",
-        "Unassigned": "7",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung-24std.at",
-      "id": 367712864,
-      "report": {
-        "Organic Search": "5",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung-24std.ch",
-      "id": 375858706,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "rohrreinigung-expert.de",
-      "id": 366578512,
-      "report": {
-        "Direct": "372",
-        "Unassigned": "155",
-        "Paid Search": "47",
-        "Display": "14",
-        "Organic Search": "7"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-notdienst-24.de",
-      "id": 262600988,
-      "report": {
-        "Organic Search": "3",
-        "Direct": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "sanitaer-notdienst24.at",
-      "id": 365155317,
       "report": {
         "Organic Search": "2"
       }
     },
     {
-      "date": "2023-05-17",
-      "label": "sat-koenig.de",
-      "id": 368376294,
+      "date": "2023-05-25",
+      "label": "mannstaedt.net",
+      "id": 364486970,
       "report": {
-        "Organic Search": "43",
-        "Direct": "2",
-        "Referral": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-koenig.de",
-      "id": 364373002,
-      "report": {
-        "Organic Search": "2",
-        "Referral": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesselprofi24.de",
-      "id": 364681445,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-hilfe.at",
-      "id": 365499849,
-      "report": {
-        "Organic Search": "9"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-koenig.com",
-      "id": 375835085,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "schluesseldienst-service.ch",
-      "id": 366586349,
-      "report": {
-        "Direct": "1",
-        "Organic Search": "1",
-        "Unassigned": "1"
-      }
-    },
-    {
-      "date": "2023-05-17",
-      "label": "wespennestentfernen24.de/",
-      "id": 367982066,
-      "report": {
-        "Organic Search": "3",
+        "Organic Search": "15",
+        "Unassigned": "8",
         "Direct": "2"
       }
     },
     {
-      "date": "2023-05-17",
-      "label": "xattack-schaedlingsbekaempfung.at",
-      "id": 365407271,
-      "report": {}
-    },
-    {
-      "date": "2023-05-17",
-      "label": "xattack-schaedlingsbekaempfung.ch",
-      "id": 366896813,
+      "date": "2023-05-25",
+      "label": "notdienst-sanitaer-heizung.de",
+      "id": 364530650,
       "report": {
-        "Organic Search": "5",
-        "Unassigned": "5"
+        "Organic Search": "2"
       }
     },
     {
-      "date": "2023-05-17",
-      "label": "xattack-schaedlingsbekaempfung.de",
-      "id": 364368320,
+      "date": "2023-05-25",
+      "label": "ozon-desinfektion24.de",
+      "id": 364613983,
+      "report": {
+        "Organic Search": "14",
+        "Unassigned": "6",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigung-24std.at",
+      "id": 367712864,
       "report": {
         "Organic Search": "3"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
+      "label": "rohrreinigung-24std.ch",
+      "id": 375858706,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "rohrreinigung-expert.de",
+      "id": 366578512,
+      "report": {
+        "Paid Search": "349",
+        "Direct": "4",
+        "Organic Search": "4"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-notdienst-24.de",
+      "id": 262600988,
+      "report": {
+        "Organic Search": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sanitaer-notdienst24.at",
+      "id": 365155317,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "sat-koenig.de",
+      "id": 368376294,
+      "report": {
+        "Organic Search": "39",
+        "Direct": "2",
+        "Referral": "2"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-koenig.de",
+      "id": 364373002,
+      "report": {
+        "Organic Search": "1",
+        "Unassigned": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesselprofi24.de",
+      "id": 364681445,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-hilfe.at",
+      "id": 365499849,
+      "report": {
+        "Organic Search": "11",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-koenig.com",
+      "id": 375835085,
+      "report": {}
+    },
+    {
+      "date": "2023-05-25",
+      "label": "schluesseldienst-service.ch",
+      "id": 366586349,
+      "report": {
+        "Direct": "1",
+        "Organic Search": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "wespennestentfernen24.de/",
+      "id": 367982066,
+      "report": {
+        "Organic Search": "13",
+        "Direct": "3"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "xattack-schaedlingsbekaempfung.at",
+      "id": 365407271,
+      "report": {
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "xattack-schaedlingsbekaempfung.ch",
+      "id": 366896813,
+      "report": {
+        "Organic Search": "5",
+        "Unassigned": "2",
+        "Direct": "1",
+        "Email": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
+      "label": "xattack-schaedlingsbekaempfung.de",
+      "id": 364368320,
+      "report": {
+        "Organic Search": "11",
+        "Direct": "1"
+      }
+    },
+    {
+      "date": "2023-05-25",
       "label": "echeck-service.de",
       "id": 356466146,
       "report": {
-        "Organic Search": "1"
+        "Organic Search": "4"
       }
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "elektriker-notdienst24h.de",
       "id": 353204046,
-      "report": {
-        "Organic Search": "1"
-      }
+      "report": {}
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "schlüsseldienst-berlin-notdienst.de",
       "id": 358722370,
-      "report": {
-        "Referral": "1"
-      }
+      "report": {}
     },
     {
-      "date": "2023-05-17",
+      "date": "2023-05-25",
       "label": "kammerjaeger-huber.at",
       "id": 358736172,
       "report": {
-        "Organic Search": "6",
-        "Direct": "1"
+        "Organic Search": "4"
       }
     }
   ]
