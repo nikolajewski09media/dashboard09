@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "export GOOGLE_APPLICATION_CREDENTIALS=/home/herb/GitHub/dashboard09/backend/credentials.json && node server.js",
+    "start": "node server.js",
     "watch": "node --watch server.js",
-    "dev": "export GOOGLE_APPLICATION_CREDENTIALS=/home/herb/GitHub/dashboard09/backend/credentials.json && npm run watch"
+    "dev": "npm run watch"
   },
   "dependencies": {
     "@google-analytics/data": "^3.2.2",
