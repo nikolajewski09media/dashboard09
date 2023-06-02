@@ -1,12 +1,13 @@
 import runReport from "../api/analyticsApi.js";
 import properties from "../model/propertiesV4.model.js";
-import { getStatistic, setStatistic } from "../model/statistic.model.js";
+import { getStatistic, setStatistic, getOneStatistic } from "../model/statistic.model.js";
 
 
 
 export async function getOneReport(req, res) {
     const { propertyId } = req.params;
-    const reportData = await runReport(propertyId, reportDate, reportDate);
+    // const reportData = await runReport(propertyId, reportDate, reportDate);
+    const reportData = getOneStatistic(propertyId)
     res.json(reportData);
 }
 

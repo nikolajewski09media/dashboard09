@@ -17,6 +17,10 @@ function getStatistic() {
     return db.data.statistic;
 }
 
+function getOneStatistic(propertyId) {
+    return db.data.statistic.filter(property => (property.id === parseInt(propertyId)))[0]
+}
+
 function setStatistic(reportData) {
     const statisticsArray = []
     const dbArray = db.data.statistic
@@ -36,4 +40,4 @@ function setStatistic(reportData) {
     db.write();
 }
 
-export { getStatistic, setStatistic };
+export { getStatistic, setStatistic, getOneStatistic };
