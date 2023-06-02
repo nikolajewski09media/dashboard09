@@ -26,9 +26,9 @@ app.listen(PORT, async () => {
     console.log(`Server is listening on port ${PORT}`);
     console.log(`Serves is reachable at http://localhost:${PORT}`);
     refreshDB();
-    for (let i = 3; i < 34; i++) {
-        await runAllReport(i)
-    }
+    // for (let i = 3; i < 34; i++) {
+    //     await runAllReport(i)
+    // }
 
     // Dieser Befehl fürt den API-Fetch von Airtaible jede sechs Stunden aus
     cron.schedule('0 0 */6 * * *', () => {
