@@ -49,6 +49,6 @@ export async function runAllReport() {
         console.log({ [reportDate]: { ...singleReportData } })
 
     }
-    setStatistic(reportData);
+    // setStatistic(reportData);
     console.log('Daten wurden erfolgreich von GA gefetched für', reportDate);
 }
