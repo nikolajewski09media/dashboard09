@@ -9,6 +9,8 @@ import { fileURLToPath } from "node:url";
 import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
 
+import { at } from '../config/environment.cjs'
+
 export default async function updateDB() {
     const __dirname = dirname(fileURLToPath(import.meta.url));
     const file = join(__dirname, "..", "db", "propertiesV4.DB.json");
@@ -35,11 +37,11 @@ export default async function updateDB() {
                 records.forEach(async function (record) {
                     // Hier passiert das schreiben in die porperties-Datenbank
                     const propApiObj = {
-                        label: record.get("Domain"),
-                        id: record.get("Porperty-ID v4 (from Porperty-ID v4)")[0],
-                        gewerk: record.get("Gewerke (from Gewerke)")[0],
+                        label: record.get(at.domain),
+                        id: record.get(at.propertyV4)[0],
+                        gewerk: record.get(at.gewerk)[0],
                     };
-                    if (record.get("Untergewerke (from Untergewerke)")) propApiObj.untergewerk = record.get("Untergewerke (from Untergewerke)");
+                    if (record.get(at.unterGewerk)) propApiObj.untergewerk = record.get(at.unterGewerk);
                     db.data.properties.push(propApiObj);
                     await db.write();
                 });
@@ -54,5 +56,3 @@ export default async function updateDB() {
             }
         );
 }
-
-// updateDB()
