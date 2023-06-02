@@ -18,7 +18,21 @@ function getStatistic() {
 }
 
 function setStatistic(reportData) {
-    db.data.statistic.push(...reportData);
+    const statisticsArray = []
+    const dbArray = db.data.statistic
+    statisticsArray.push(...reportData)
+    if (dbArray.length === 0) {
+        dbArray.push(...statisticsArray)
+    } else {
+        for (let i = 0; i < statisticsArray.length; i++) {
+            dbArray[i].reports.push(statisticsArray[i].reports[0])
+        }
+
+
+
+    }
+    // db.data.statistic.push(...reportData);
+
     db.write();
 }
 
