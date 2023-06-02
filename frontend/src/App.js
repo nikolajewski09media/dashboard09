@@ -1,5 +1,5 @@
 import Topbar from "./scenes/global/Topbar";
-import { ColorModeContext } from "./theme";
+import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 
 function App() {
