@@ -1,5 +1,6 @@
 import express from "express";
 import cron from "node-cron";
+import cors from "cors";
 
 import {
   getAllStatistic,
@@ -12,6 +13,7 @@ import { refreshDB } from "./controller/airtableToDatabaseApi.controller.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(cors());
 app.get("/", (req, res) => {
   return res.send("Hello World!");
 });
