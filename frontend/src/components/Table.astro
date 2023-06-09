@@ -1,0 +1,62 @@
+---
+import axios from "axios";
+const data = (await axios.get("http://localhost:3000/api/allProperties")).data;
+
+const newReportsArray = [];
+for (let i = 0; i < data.length; i++) {
+    let curr = 0;
+    data[i].reports.forEach((reports) => {
+        for (let date in reports) {
+            const report = reports[date];
+            for (let key in report) {
+                if (key !== "Paid Search") {
+                    curr += parseInt(report[key]);
+                }
+            }
+        }
+    });
+    newReportsArray.push({
+        label: data[i].label,
+        reports: curr,
+    });
+}
+
+const theaders = Object.keys(newReportsArray[0]);
+---
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead
+            class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+        >
+            <tr>
+                {
+                    theaders.map((theader) => {
+                        return (
+                            <th scope="col" class="px-6 py-3">
+                                {theader}
+                            </th>
+                        );
+                    })
+                }
+            </tr>
+        </thead>
+        <tbody>
+            {
+                newReportsArray.map((report) => {
+                    return (
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th
+                                scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                            >
+                                {report.label}
+                            </th>
+                            <td class="px-6 py-4"> {report.reports}</td>
+                        </tr>
+                    );
+                })
+            }
+        </tbody>
+    </table>
+</div>
