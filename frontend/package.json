@@ -17,13 +17,21 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
     "@mui/styled-engine-sc": "^5.12.0",
+    "@radix-ui/react-popover": "^1.0.6",
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "astro": "^2.6.2",
+    "class-variance-authority": "^0.6.0",
+    "clsx": "^1.2.1",
+    "date-fns": "^2.30.0",
     "flowbite": "^1.6.5",
+    "lucide-react": "^0.244.0",
     "react": "^18.2.0",
+    "react-day-picker": "^8.7.1",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.11",
-    "tailwindcss": "^3.3.2"
+    "tailwind-merge": "^1.13.2",
+    "tailwindcss": "^3.3.2",
+    "tailwindcss-animate": "^1.0.6"
   }
 }

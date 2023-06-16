@@ -1,18 +1,15 @@
 ---
 import Table from "../components/Table.astro";
-// import Charts from "./Charts/Charts.jsx";
-// import Table from "./TableMui/Table.jsx";
-import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
-import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
+import Header1 from "../components/Header1.astro";
 import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
+import DatePicker from "../components/DatePicker.astro";
+// import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
+// import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
 ---
 
 <main class="p-4 md:ml-64 min-h-screen pt-20 dark:text-white">
-    <h1
-        class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
-    >
-        Dashboard
-    </h1>
+    <Header1>Dashboard</Header1>
+    <!-- <Grid1x4><DatePicker /></Grid1x4> To Do -->
     <Grid1x4><Table /></Grid1x4>
 
     <!-- <Grid2x4 /> -->
