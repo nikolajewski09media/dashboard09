@@ -2,72 +2,20 @@
 import Table from "../components/Table.astro";
 // import Charts from "./Charts/Charts.jsx";
 // import Table from "./TableMui/Table.jsx";
+import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
+import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
+import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
 ---
 
-<main class="p-4 md:ml-64 h-screen pt-20 dark:text-white">
+<main class="p-4 md:ml-64 min-h-screen pt-20 dark:text-white">
     <h1
         class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
     >
-        Überschrift
+        Dashboard
     </h1>
-    <Table />
-    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 mb-4">
-        <div
-            class="border-2 border-dashed border-gray-300 rounded-lg dark:border-gray-600 h-32 md:h-64"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-32 md:h-64"
-        >
-        </div>
-    </div> -->
+    <Grid1x4><Table /></Grid1x4>
 
-    <!-- <div class="grid grid-cols-2 gap-4 mb-4">
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-    </div> -->
-    <!-- <div
-        class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-    >
-    </div>
-    <div class="grid grid-cols-2 gap-4">
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-        <div
-            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-        >
-        </div>
-    </div> -->
+    <!-- <Grid2x4 /> -->
+    <!-- <Grid4x4 /> -->
+    <!-- <Grid4x4 /> -->
 </main>
