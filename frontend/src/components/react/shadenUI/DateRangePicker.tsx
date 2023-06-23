@@ -1,16 +1,18 @@
+"use client"
+
 import * as React from "react"
 import { addDays, format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
 import { DateRange } from "react-day-picker"
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
+import { cn } from "../../../lib/utils"
+import { Button } from "../../../../astro/tsconfigs/@/components/ui/button"
+import { Calendar } from "../../../../astro/tsconfigs/@/components/ui/calendar"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "../../../../astro/tsconfigs/@/components/ui/popover"
 
 export function DatePickerWithRange({
   className,
