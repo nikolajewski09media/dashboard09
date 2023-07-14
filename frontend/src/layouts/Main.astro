@@ -3,13 +3,19 @@ import Table from "../components/Table.astro";
 import Header1 from "../components/Header1.astro";
 import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
 import DatePicker from "../components/DatePicker.astro";
+import Charts from "../components/Charts.astro";
+import SelectPickerChart from "../components/react/rsuite/SelectPickerChart.jsx";
 // import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
 // import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
 ---
 
 <main class="p-4 md:ml-64 min-h-screen pt-20 dark:text-white">
     <Header1>Dashboard</Header1>
-    <Grid1x4><DatePicker /></Grid1x4>
+    <Grid1x4>
+        <DatePicker />
+        <SelectPickerChart client:load />
+    </Grid1x4>
+    <Grid1x4><Charts /></Grid1x4>
     <Grid1x4><Table /></Grid1x4>
 
     <!-- <Grid2x4 /> -->
