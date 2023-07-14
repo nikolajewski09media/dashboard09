@@ -1,5 +1,5 @@
 ---
-import TableMui from "./TableMui/Table.jsx";
+import TableMui from "./react/TableMui/Table.jsx";
 import axios from "axios";
 import { dates } from "../utils/dataStore.js";
 
@@ -11,10 +11,10 @@ const data = (await axios.get("http://localhost:3000/api/allProperties")).data;
 const initalData = [];
 for (let i = 0; i < data.length; i++) {
     let curr = 0;
-    data[i].reports.forEach((reports) => {
+    data[i].reports.forEach((reports: []) => {
         for (let date in reports) {
             if (date >= $startDate && date <= $endDate) {
-                const report = reports[date];
+                const report: [] = reports[date];
                 for (let key in report) {
                     if (key !== toExclude) {
                         curr += parseInt(report[key]);

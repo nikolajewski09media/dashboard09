@@ -21,9 +21,8 @@ import Switch from "@mui/material/Switch";
 import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
-import { dates } from "../../utils/dataStore";
+import { dates } from "../../../utils/dataStore";
 import { useStore } from "@nanostores/react";
-// import { axios } from "axios";
 
 function createData(name, clicks) {
   return {
@@ -31,22 +30,6 @@ function createData(name, clicks) {
     clicks,
   };
 }
-
-// const rows = [
-//   createData('Cupcake', 305),
-//   createData('Donut', 452),
-//   createData('Eclair', 262),
-//   createData('Frozen yoghurt', 159),
-//   createData('Gingerbread', 356),
-//   createData('Honeycomb', 408),
-//   createData('Ice cream sandwich', 237),
-//   createData('Jelly Bean', 375),
-//   createData('Hallo Welt', 518),
-//   createData('Lollipop', 392),
-//   createData('Marshmallow', 318),
-//   createData('Nougat', 360),
-//   createData('Oreo', 437),
-// ];
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -272,7 +255,6 @@ export default function EnhancedTable({ initalData }) {
         });
       }
       setRows(rowsArr);
-      console.log(rows);
     };
 
     fetchData();

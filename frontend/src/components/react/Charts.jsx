@@ -21,9 +21,9 @@ import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import { useState } from "react";
 import { Data } from "../../utils/data.js";
-import PieChart from "./PieChart.jsx";
-import { BarChart } from "./BarChart.jsx";
-import LineChart from "./LineChart.jsx";
+import PieChart from "./charts/PieChart.jsx";
+import { BarChart } from "./charts/BarChart.jsx";
+import LineChart from "./charts/LineChart.jsx";
 import { charts } from "../../utils/chartStore.js";
 import { useStore } from "@nanostores/react";
 
@@ -34,7 +34,7 @@ export default function Charts() {
     labels: Data.map((data) => data.year),
     datasets: [
       {
-        label: "Users Gained",
+        label: "Sessions",
         data: Data.map((data) => data.userGain),
         backgroundColor: [
           "rgba(75,192,192,1)",
@@ -59,7 +59,7 @@ export default function Charts() {
         <LineChart chartData={chartData} />
       )}
 
-      <PieChart chartData={chartData} />
+      {/* <PieChart chartData={chartData} /> */}
     </div>
   );
 }
