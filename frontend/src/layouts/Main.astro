@@ -5,6 +5,7 @@ import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
 import DatePicker from "../components/DatePicker.astro";
 import Charts from "../components/Charts.astro";
 import SelectPickerChart from "../components/react/rsuite/SelectPickerChart.jsx";
+import InputSelector from "../components/react/InputSelector.jsx";
 // import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
 // import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
 ---
@@ -14,6 +15,7 @@ import SelectPickerChart from "../components/react/rsuite/SelectPickerChart.jsx"
     <Grid1x4>
         <DatePicker />
         <SelectPickerChart client:load />
+        <InputSelector client:load />
     </Grid1x4>
     <Grid1x4><Charts /></Grid1x4>
     <Grid1x4><Table /></Grid1x4>

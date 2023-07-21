@@ -1,5 +1,9 @@
 ---
+import { getDataInRangeNew } from "../utils/dataStore";
 import ChartsReact from "./react/Charts.jsx";
+import { dates } from "../utils/dataStore";
+const $dates = dates.get();
+const initialData = await getDataInRangeNew($dates);
 ---
 
-<ChartsReact client:load />
+<ChartsReact {initialData} client:load />

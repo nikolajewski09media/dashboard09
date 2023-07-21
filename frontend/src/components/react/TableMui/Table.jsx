@@ -21,7 +21,7 @@ import Switch from "@mui/material/Switch";
 import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
-import { dates } from "../../../utils/dataStore";
+import { dates, getDataInRange } from "../../../utils/dataStore";
 import { useStore } from "@nanostores/react";
 
 function createData(name, clicks) {
@@ -226,38 +226,9 @@ export default function EnhancedTable({ initalData }) {
 
   const [rows, setRows] = React.useState(initalData);
   const $dates = useStore(dates);
-  const [$startDate, $endDate] = $dates;
 
   React.useEffect(() => {
-    const fetchData = async () => {
-      const rowsArr = [];
-      const toExclude = "Paid Search";
-      const response = await fetch("http://localhost:3000/api/allProperties");
-      const data = await response.json();
-
-      for (let i = 0; i < data.length; i++) {
-        let curr = 0;
-        data[i].reports.forEach((reports) => {
-          for (let date in reports) {
-            if (date >= $startDate && date <= $endDate) {
-              const report = reports[date];
-              for (let key in report) {
-                if (key !== toExclude) {
-                  curr += parseInt(report[key]);
-                }
-              }
-            }
-          }
-        });
-        rowsArr.push({
-          name: data[i].label,
-          clicks: curr,
-        });
-      }
-      setRows(rowsArr);
-    };
-
-    fetchData();
+    getDataInRange($dates).then((rowsArr) => setRows(rowsArr));
   }, [$dates]);
 
   const handleRequestSort = (event, property) => {

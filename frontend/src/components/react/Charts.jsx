@@ -1,41 +1,23 @@
-const data = {
-  labels: ["Red", "Orange", "Blue"],
-  // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
-  datasets: [
-    {
-      label: "Popularity of colours",
-      data: [55, 23, 96],
-      // you can set indiviual colors for each bar
-      backgroundColor: [
-        "rgba(255, 255, 255, 0.6)",
-        "rgba(255, 255, 255, 0.6)",
-        "rgba(255, 255, 255, 0.6)",
-      ],
-      borderWidth: 1,
-    },
-  ],
-};
-
-// App.js
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
-import { useState } from "react";
-import { Data } from "../../utils/data.js";
+import { useState, useEffect } from "react";
 import PieChart from "./charts/PieChart.jsx";
 import { BarChart } from "./charts/BarChart.jsx";
 import LineChart from "./charts/LineChart.jsx";
 import { charts } from "../../utils/chartStore.js";
 import { useStore } from "@nanostores/react";
+import { dates, getDataInRangeNew } from "../../utils/dataStore.js";
+import { aggregatedMethod } from "../../utils/dataStore.js";
 
 Chart.register(CategoryScale);
 
-export default function Charts() {
+export default function Charts({ initialData }) {
   const [chartData, setChartData] = useState({
-    labels: Data.map((data) => data.year),
+    labels: initialData.map((data) => data.name),
     datasets: [
       {
         label: "Sessions",
-        data: Data.map((data) => data.userGain),
+        data: initialData.map((data) => data.clicks),
         backgroundColor: [
           "rgba(75,192,192,1)",
           "#ecf0f1",
@@ -48,8 +30,32 @@ export default function Charts() {
       },
     ],
   });
-
   const $charts = useStore(charts);
+  const $dates = useStore(dates);
+  const $aggregatedMethod = useStore(aggregatedMethod);
+
+  useEffect(() => {
+    getDataInRangeNew($dates, $aggregatedMethod).then((newData) =>
+      setChartData({
+        labels: newData.map((data) => data.name),
+        datasets: [
+          {
+            label: "Sessions",
+            data: newData.map((data) => data.clicks),
+            backgroundColor: [
+              "rgba(75,192,192,1)",
+              "#ecf0f1",
+              "#50AF95",
+              "#f3ba2f",
+              "#2a71d0",
+            ],
+            borderColor: "black",
+            borderWidth: 2,
+          },
+        ],
+      })
+    );
+  }, [$dates, $aggregatedMethod]);
 
   return (
     <div className="App">
