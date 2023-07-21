@@ -6,21 +6,23 @@ import DatePicker from "../components/DatePicker.astro";
 import Charts from "../components/Charts.astro";
 import SelectPickerChart from "../components/react/rsuite/SelectPickerChart.jsx";
 import InputSelector from "../components/react/InputSelector.jsx";
+import DomainSelector from "../components/react/selectors/DomainSelector.jsx";
 // import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
 // import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
 ---
 
 <main class="p-4 md:ml-64 min-h-screen pt-20 dark:text-white">
-    <CustomHeader>Dashboard</CustomHeader>
-    <Grid1x4>
-        <DatePicker />
-        <SelectPickerChart client:load />
-        <InputSelector client:load />
-    </Grid1x4>
-    <Grid1x4><Charts /></Grid1x4>
-    <Grid1x4><Table /></Grid1x4>
+  <CustomHeader>Dashboard</CustomHeader>
+  <Grid1x4>
+    <DatePicker />
+    <SelectPickerChart client:load />
+    <InputSelector client:load />
+    <DomainSelector client:load />
+  </Grid1x4>
+  <Grid1x4><Charts /></Grid1x4>
+  <Grid1x4><Table /></Grid1x4>
 
-    <!-- <Grid2x4 /> -->
-    <!-- <Grid4x4 /> -->
-    <!-- <Grid4x4 /> -->
+  <!-- <Grid2x4 /> -->
+  <!-- <Grid4x4 /> -->
+  <!-- <Grid4x4 /> -->
 </main>

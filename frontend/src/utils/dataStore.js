@@ -19,6 +19,12 @@ export function setAggregatedMethod(aM) {
   aggregatedMethod.set(aM);
 }
 
+export const domainSelection = atom(null);
+
+export function setDomainSelection(dS) {
+  domainSelection.set(dS);
+}
+
 export async function getDataInRange(dates, toExclude = "Paid Search") {
   const [startDate, endDate] = dates;
   const data = (await axios.get("http://localhost:3000/api/allProperties"))
@@ -51,6 +57,7 @@ export async function getDataInRange(dates, toExclude = "Paid Search") {
 export async function getDataInRangeNew(
   dates,
   aggregation = "monthly",
+  domain = null, // Hinzugefügter Parameter für den Domainnamen (optional)
   toExclude = "Paid Search"
 ) {
   const [startDate, endDate] = dates;
@@ -60,6 +67,11 @@ export async function getDataInRangeNew(
   const aggregatedData = {};
 
   for (let i = 0; i < data.length; i++) {
+    // Filtere nach Domainnamen, falls angegeben
+    if (domain && data[i].label !== domain) {
+      continue;
+    }
+
     data[i].reports.forEach((reports) => {
       for (let date in reports) {
         if (date >= startDate && date <= endDate) {
