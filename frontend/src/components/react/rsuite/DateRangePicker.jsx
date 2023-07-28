@@ -13,6 +13,7 @@ export default function DateRangePickerComp() {
       defaultCalendarValue={dateRange}
       placeholder="TT.MM.YYYY - TT.MM.YYYY"
       character=" - "
+      isoWeek={true}
       value={dateRange}
       onOk={(eventTargetValue) => {
         setdateRange(eventTargetValue);
