@@ -7,6 +7,10 @@ import Charts from "../components/Charts.astro";
 import SelectPickerChart from "../components/react/rsuite/SelectPickerChart.jsx";
 import InputSelector from "../components/react/InputSelector.jsx";
 import DomainSelector from "../components/react/selectors/DomainSelector.jsx";
+import GewerkeSelector from "../components/react/selectors/GewerkeSelector.jsx";
+import UntergewerkeSelector from "../components/react/selectors/UntergewerkeSelector.jsx";
+import ProductOwnerSelector from "../components/react/selectors/ProductOwnerSelector.jsx";
+
 // import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
 // import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
 ---
@@ -18,6 +22,9 @@ import DomainSelector from "../components/react/selectors/DomainSelector.jsx";
     <SelectPickerChart client:load />
     <InputSelector client:load />
     <DomainSelector client:load />
+    <GewerkeSelector client:load />
+    <UntergewerkeSelector client:load />
+    <ProductOwnerSelector client:load />
   </Grid1x4>
   <Grid1x4><Charts /></Grid1x4>
   <Grid1x4><Table /></Grid1x4>

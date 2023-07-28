@@ -25,6 +25,24 @@ export function setDomainSelection(dS) {
   domainSelection.set(dS);
 }
 
+export const gewerkSelection = atom(null);
+
+export function setGewerkSelection(dS) {
+  gewerkSelection.set(dS);
+}
+
+export const unterGewerkSelection = atom(null);
+
+export function setUnterGewerkSelection(dS) {
+  unterGewerkSelection.set(dS);
+}
+
+export const productOwnerSelection = atom(null);
+
+export function setProductOwnerSelection(dS) {
+  productOwnerSelection.set(dS);
+}
+
 export async function getDataInRange(dates, toExclude = "Paid Search") {
   const [startDate, endDate] = dates;
   const data = (await axios.get("http://localhost:3000/api/allProperties"))
@@ -54,30 +72,47 @@ export async function getDataInRange(dates, toExclude = "Paid Search") {
   return rowData;
 }
 
+// Diese Funktion ruft aggregierte Daten aus einer API basierend auf einem Zeitraum, einer Aggregationsmethode und einem optionalen Domainnamen ab.
 export async function getDataInRangeNew(
-  dates,
-  aggregation = "monthly",
-  domain = null, // Hinzugefügter Parameter für den Domainnamen (optional)
-  toExclude = "Paid Search"
+  dates, // Der Zeitraum, für den die Daten abgerufen werden sollen (Array mit Start- und Enddatum)
+  aggregation = "monthly", // Die Aggregationsmethode (optional, Standardwert ist "monthly")
+  domain = null, // Der Domainname, nach dem gefiltert werden soll (optional, Standardwert ist null)
+  po = null, // Hinzugefügter Parameter für 'po' (optional)
+  gewerke = null, // Hinzugefügter Parameter für 'gewerke' (optional)
+  untergewerke = null, // Hinzugefügter Parameter für 'untergewerke' (optional)
+  toExclude = "Paid Search" // Der Schlüsselwert, der aus den Berichten ausgeschlossen werden soll (optional, Standardwert ist "Paid Search")
 ) {
-  const [startDate, endDate] = dates;
-  const data = (await axios.get("http://localhost:3000/api/allProperties"))
-    .data;
+  const [startDate, endDate] = dates; // Start- und Enddatum aus dem 'dates'-Array extrahieren
+  const data = (
+    await axios.get("http://localhost:3000/api/getAllPropertiesWithStats")
+  ).data; // Daten von der API abrufen und in der Variable 'data' speichern
 
-  const aggregatedData = {};
+  const aggregatedData = {}; // Ein leeres Objekt erstellen, in dem die aggregierten Daten gespeichert werden
 
+  // Schleife über alle Elemente in den Daten
   for (let i = 0; i < data.length; i++) {
     // Filtere nach Domainnamen, falls angegeben
-    if (domain && data[i].label !== domain) {
-      continue;
+    if (
+      (domain && data[i].label !== domain) || // Filter für Domain
+      (po && data[i].po !== po) || // Filter für 'po'
+      (gewerke && data[i].gewerk !== gewerke) || // Filter für 'gewerke'
+      (untergewerke &&
+        (data[i].gewerk !== "Sanitär Heizung usw." ||
+          !data[i].untergewerk ||
+          data[i].untergewerk[0] !== untergewerke)) // Filter für 'untergewerke' abhängig von 'gewerke'
+    ) {
+      continue; // Wenn ein Domainname angegeben wurde und dieser nicht mit dem 'label' des Elements übereinstimmt, überspringe das Element
     }
 
     data[i].reports.forEach((reports) => {
+      // Schleife über die Berichte für das aktuelle Element
       for (let date in reports) {
+        // Überprüfe, ob das Datum im gewünschten Zeitraum liegt
         if (date >= startDate && date <= endDate) {
-          const report = reports[date];
+          const report = reports[date]; // Der aktuelle Bericht für das Datum
           let aggregationKey = "";
 
+          // Abhängig von der gewählten Aggregationsmethode 'aggregation' einen Aggregationsschlüssel erstellen
           if (aggregation === "monthly") {
             aggregationKey = date.substring(0, 7); // Monat im Format 'YYYY-MM'
           } else if (aggregation === "weekly") {
@@ -91,13 +126,15 @@ export async function getDataInRangeNew(
             aggregationKey = date; // Tägliches Datum im Format 'YYYY-MM-DD'
           }
 
+          // Falls der Aggregationsschlüssel noch nicht im 'aggregatedData'-Objekt existiert, füge ihn hinzu
           if (!aggregatedData[aggregationKey]) {
             aggregatedData[aggregationKey] = {
-              name: aggregationKey,
-              clicks: 0,
+              name: aggregationKey, // Der Name des Aggregationsschlüssels
+              clicks: 0, // Anfangswert für die aggregierten Klicks
             };
           }
 
+          // Iteriere über alle Schlüssel im Bericht und aggregiere die Klicks (außer dem auszuschließenden Schlüssel)
           for (let key in report) {
             if (key !== toExclude) {
               aggregatedData[aggregationKey].clicks += parseInt(report[key]);
@@ -108,10 +145,9 @@ export async function getDataInRangeNew(
     });
   }
 
-  const newData = Object.values(aggregatedData);
-
-  // Sortiere das Array chronologisch basierend auf dem 'name'-Schlüssel
+  const newData = Object.values(aggregatedData); // Konvertiere die aggregierten Daten in ein Array
+  // Sortiere das Array chronologisch basierend auf dem 'name'-Schlüssel (entsprechend der Aggregationseinheit)
   newData.sort((a, b) => (a.name > b.name ? 1 : -1));
 
-  return newData;
+  return newData; // Gebe die sortierten und aggregierten Daten zurück
 }

@@ -27,6 +27,7 @@ export default function InputSelector() {
           value={$domainSelection}
           onSelect={(value) => setDomainSelection(value)}
           onClean={() => setDomainSelection(null)}
+          placeholder={"Domains"}
         />
       )}
     </>
