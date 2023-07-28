@@ -2,15 +2,14 @@ import React from "react";
 import { Line } from "react-chartjs-2";
 function LineChart({ chartData }) {
   return (
-    <div style={{ width: 700 }} className="chart-container">
-      <h2 style={{ textAlign: "center" }}>Line Chart</h2>
+    <div style={{ maxWidth: "48 rem" }} className="chart-container">
       <Line
         data={chartData}
         options={{
           plugins: {
             title: {
-              display: true,
-              text: "Users Gained between 2016-2020",
+              display: false,
+              text: "Linechart Sessions",
             },
             legend: {
               display: false,

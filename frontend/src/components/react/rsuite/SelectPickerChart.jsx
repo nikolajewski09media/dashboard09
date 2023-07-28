@@ -14,6 +14,7 @@ export default function SelectPickerChart() {
       onSelect={(value) => {
         setCharts(value);
       }}
+      searchable={false}
     />
   );
 }
