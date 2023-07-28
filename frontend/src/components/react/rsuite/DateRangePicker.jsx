@@ -15,6 +15,7 @@ export default function DateRangePickerComp() {
       character=" - "
       isoWeek={true}
       value={dateRange}
+      appearance={"default"}
       onOk={(eventTargetValue) => {
         setdateRange(eventTargetValue);
         addDate([
