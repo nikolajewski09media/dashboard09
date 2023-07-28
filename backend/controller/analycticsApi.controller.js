@@ -55,3 +55,14 @@ export async function runAllReport() {
   setStatistic(reportData);
   console.log("Daten wurden erfolgreich von GA gefetched für", reportDate);
 }
+
+export function getAllPropertiesWithStats(req, res) {
+  const stats = getStatistic();
+  const props = properties;
+  const merged = stats.map((stat) => {
+    const prop = props.find((p) => p.id === stat.id);
+    return { ...prop, ...stat };
+  });
+
+  return res.json(merged);
+}

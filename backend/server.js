@@ -7,6 +7,7 @@ import {
   getOneReport,
   runAllReport,
   setAllReport,
+  getAllPropertiesWithStats,
 } from "./controller/analycticsApi.controller.js";
 import { refreshDB } from "./controller/airtableToDatabaseApi.controller.js";
 
@@ -21,6 +22,8 @@ app.get("/", (req, res) => {
 app.get("/api/property/:propertyId", getOneReport);
 
 app.get("/api/allProperties", getAllStatistic);
+
+app.get("/api/getAllPropertiesWithStats", getAllPropertiesWithStats);
 
 app.listen(PORT, async () => {
   console.log(`Server is listening on port ${PORT}`);

@@ -1,11 +1,11 @@
-
-require('dotenv').config();
+require("dotenv").config();
 
 const at = {
-    domain: process.env.AT_DOMAIN,
-    propertyV4: process.env.AT_PROPERTY_V4,
-    gewerk: process.env.AT_GEWERK,
-    unterGewerk: process.env.AT_UNTER_GEWERK
-}
+  domain: process.env.AT_DOMAIN,
+  propertyV4: process.env.AT_PROPERTY_V4,
+  gewerk: process.env.AT_GEWERK,
+  unterGewerk: process.env.AT_UNTER_GEWERK,
+  po: process.env.AT_PO,
+};
 
 module.exports = { at };

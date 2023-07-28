@@ -6,7 +6,11 @@ import { BarChart } from "./charts/BarChart.jsx";
 import LineChart from "./charts/LineChart.jsx";
 import { charts } from "../../utils/chartStore.js";
 import { useStore } from "@nanostores/react";
-import { dates, getDataInRangeNew } from "../../utils/dataStore.js";
+import {
+  dates,
+  domainSelection,
+  getDataInRangeNew,
+} from "../../utils/dataStore.js";
 import { aggregatedMethod } from "../../utils/dataStore.js";
 
 Chart.register(CategoryScale);
@@ -33,29 +37,31 @@ export default function Charts({ initialData }) {
   const $charts = useStore(charts);
   const $dates = useStore(dates);
   const $aggregatedMethod = useStore(aggregatedMethod);
+  const $domainSelection = useStore(domainSelection);
 
   useEffect(() => {
-    getDataInRangeNew($dates, $aggregatedMethod).then((newData) =>
-      setChartData({
-        labels: newData.map((data) => data.name),
-        datasets: [
-          {
-            label: "Sessions",
-            data: newData.map((data) => data.clicks),
-            backgroundColor: [
-              "rgba(75,192,192,1)",
-              "#ecf0f1",
-              "#50AF95",
-              "#f3ba2f",
-              "#2a71d0",
-            ],
-            borderColor: "black",
-            borderWidth: 2,
-          },
-        ],
-      })
+    getDataInRangeNew($dates, $aggregatedMethod, $domainSelection).then(
+      (newData) =>
+        setChartData({
+          labels: newData.map((data) => data.name),
+          datasets: [
+            {
+              label: "Sessions",
+              data: newData.map((data) => data.clicks),
+              backgroundColor: [
+                "rgba(75,192,192,1)",
+                "#ecf0f1",
+                "#50AF95",
+                "#f3ba2f",
+                "#2a71d0",
+              ],
+              borderColor: "black",
+              borderWidth: 2,
+            },
+          ],
+        })
     );
-  }, [$dates, $aggregatedMethod]);
+  }, [$dates, $aggregatedMethod, $domainSelection]);
 
   return (
     <div className="App">
