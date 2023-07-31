@@ -23,13 +23,13 @@ export function getAllStatistic(req, res) {
   res.json(stats);
 }
 
-export async function runAllReport() {
+export async function runAllReport(i = 1) {
   const yesterdate = new Date();
-  yesterdate.setDate(yesterdate.getDate() - 1);
+  yesterdate.setDate(yesterdate.getDate() - i);
   const [reportDate] = yesterdate.toISOString().split("T");
 
   const reportData = [];
-  // console.log('Fetch hat begonnen. Kann ca. 1-2 Minuten dauern!')
+  // console.log("Fetch hat begonnen. Kann ca. 1-2 Minuten dauern!");
   for (const property of properties) {
     const singleReportData = await runReport(
       property.id,
@@ -50,7 +50,7 @@ export async function runAllReport() {
       id: property.id,
       reports: [{ [reportDate]: { ...singleReportData } }],
     });
-    // console.log({ [reportDate]: { ...singleReportData } })
+    console.log({ [reportDate]: { ...singleReportData } });
   }
   setStatistic(reportData);
   console.log("Daten wurden erfolgreich von GA gefetched für", reportDate);

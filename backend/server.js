@@ -28,8 +28,8 @@ app.get("/api/getAllPropertiesWithStats", getAllPropertiesWithStats);
 app.listen(PORT, async () => {
   console.log(`Server is listening on port ${PORT}`);
   console.log(`Serves is reachable at http://localhost:${PORT}`);
-  // for (let i = 3; i < 34; i++) {
-  //     await runAllReport(i)
+  // for (let i = 1; i < 150; i++) {
+  //   await runAllReport(i);
   // }
 
   // Dieser Befehl führt den API-Fetch von Airtaible jede sechs Stunden aus
