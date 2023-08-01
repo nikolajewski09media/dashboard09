@@ -23,7 +23,7 @@ export function getAllStatistic(req, res) {
   res.json(stats);
 }
 
-export async function runAllReport(i = 1) {
+export async function runAllReport(i = 2) {
   const yesterdate = new Date();
   yesterdate.setDate(yesterdate.getDate() - i);
   const [reportDate] = yesterdate.toISOString().split("T");
