@@ -21,7 +21,11 @@ import Switch from "@mui/material/Switch";
 import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
-import { dates, getDataInRange } from "../../../utils/dataStore";
+import {
+  $fetchedData,
+  dates,
+  getDateInRangeNew,
+} from "../../../utils/dataStore";
 import { useStore } from "@nanostores/react";
 
 function createData(name, clicks) {
@@ -228,7 +232,13 @@ export default function EnhancedTable({ initalData }) {
   const $dates = useStore(dates);
 
   React.useEffect(() => {
-    getDataInRange($dates).then((rowsArr) => setRows(rowsArr));
+    async function fetchData() {
+      const data = await useStore($fetchedData);
+      console.log(data);
+      const rowsArr = getDateInRangeNew(data, $dates);
+      setRows(rowsArr);
+    }
+    fetchData();
   }, [$dates]);
 
   const handleRequestSort = (event, property) => {
