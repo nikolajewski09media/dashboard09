@@ -1,6 +1,8 @@
 import { atom } from "nanostores";
 import axios from "axios";
 
+const domainName = import.meta.env.DOMAIN_NAME || "http://localhost:3000";
+
 export const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
 export const yesterday = new Date(Date.now() - 1 * 24 * 60 * 60 * 1000);
 
@@ -44,11 +46,7 @@ export function setProductOwnerSelection(dS) {
 }
 
 const fetchedData = async () =>
-  (
-    await axios.get(
-      "https://agitated-rubin.82-165-243-146.plesk.page/api/getAllPropertiesWithStats"
-    )
-  ).data;
+  (await axios.get(domainName + "/api/getAllPropertiesWithStats")).data;
 
 export const $fetchedData = atom(fetchedData());
 
