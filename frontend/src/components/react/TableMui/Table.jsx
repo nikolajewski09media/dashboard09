@@ -21,13 +21,9 @@ import Switch from "@mui/material/Switch";
 import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
-import {
-  $fetchedData,
-  dates,
-  getDateInRangeNew,
-} from "../../../utils/dataStore";
+import { $fetchedData, dates } from "../../../utils/dataStore";
 import { useStore } from "@nanostores/react";
-
+import { getDataInRangeNew } from "../../../utils/dataStore";
 function createData(name, clicks) {
   return {
     name,
@@ -235,7 +231,7 @@ export default function EnhancedTable({ initalData }) {
     async function fetchData() {
       const data = await useStore($fetchedData);
       console.log(data);
-      const rowsArr = getDateInRangeNew(data, $dates);
+      const rowsArr = getDataInRangeNew(data, $dates);
       setRows(rowsArr);
     }
     fetchData();
