@@ -43,13 +43,14 @@ export function setProductOwnerSelection(dS) {
   productOwnerSelection.set(dS);
 }
 
-const fetchedData = (
-  await axios.get(
-    "https://agitated-rubin.82-165-243-146.plesk.page/api/getAllPropertiesWithStats"
-  )
-).data;
+const fetchedData = async () =>
+  (
+    await axios.get(
+      "https://agitated-rubin.82-165-243-146.plesk.page/api/getAllPropertiesWithStats"
+    )
+  ).data;
 
-export const $fetchedData = atom(fetchedData);
+export const $fetchedData = atom(fetchedData());
 
 export async function getDataInRange(dates, toExclude = "Paid Search") {
   const [startDate, endDate] = dates;
