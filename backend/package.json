@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "watch": "node --watch server.js",
+    "start": "node server.cjs",
+    "watch": "node --watch server.cjs",
     "dev": "npm run watch"
   },
   "dependencies": {
