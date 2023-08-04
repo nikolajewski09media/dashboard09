@@ -48,7 +48,7 @@ export default function Charts({ initialData }) {
 
   useEffect(() => {
     async function dataFetch() {
-      const data = $fetchedData.get();
+      const data = await $fetchedData.get();
       getDataInRangeNew(
         data,
         $dates,

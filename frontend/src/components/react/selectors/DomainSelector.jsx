@@ -12,10 +12,13 @@ export default function InputSelector() {
   const [selectorData, setselectorData] = useState(null);
   const $domainSelection = useStore(domainSelection);
   useEffect(() => {
-    const data = $fetchedData.get();
-    setselectorData(
-      data.map((item) => ({ label: item.label, value: item.label }))
-    );
+    async function dataFetch() {
+      const data = await $fetchedData.get();
+      setselectorData(
+        data.map((item) => ({ label: item.label, value: item.label }))
+      );
+    }
+    dataFetch();
   }, [selectorData]);
   return (
     <>

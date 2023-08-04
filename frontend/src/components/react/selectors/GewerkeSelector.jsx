@@ -12,13 +12,16 @@ export default function InputSelector() {
   const [selectorData, setselectorData] = useState(null);
   const $gewerkSelection = useStore(gewerkSelection);
   useEffect(() => {
-    const data = $fetchedData.get();
-    const gewerkeSet = new Set(data.map((item) => item.gewerk)); // Ein Set erstellen, das eindeutige 'gewerk'-Werte aus den Daten enthält
-    const gewerkeArray = [...gewerkeSet].map((item) => ({
-      label: item,
-      value: item,
-    }));
-    setselectorData(gewerkeArray);
+    async function dataFetch() {
+      const data = await $fetchedData.get();
+      const gewerkeSet = new Set(data.map((item) => item.gewerk)); // Ein Set erstellen, das eindeutige 'gewerk'-Werte aus den Daten enthält
+      const gewerkeArray = [...gewerkeSet].map((item) => ({
+        label: item,
+        value: item,
+      }));
+      setselectorData(gewerkeArray);
+    }
+    dataFetch();
   }, [selectorData]);
   return (
     <>
