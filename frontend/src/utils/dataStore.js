@@ -1,7 +1,8 @@
 import { atom } from "nanostores";
 import axios from "axios";
 
-const domainName = import.meta.env.DOMAIN_NAME || "http://localhost:3000";
+const domainName =
+  import.meta.env.SECRET_BE_DOMAIN_NAME || "http://localhost:3000";
 
 export const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
 export const yesterday = new Date(Date.now() - 1 * 24 * 60 * 60 * 1000);
