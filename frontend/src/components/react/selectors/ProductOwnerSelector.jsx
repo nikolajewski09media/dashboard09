@@ -34,6 +34,7 @@ export default function InputSelector() {
           onSelect={(value) => setProductOwnerSelection(value)}
           onClean={() => setProductOwnerSelection(null)}
           placeholder={"Product Owner"}
+          className="flex-auto"
         />
       )}
     </>

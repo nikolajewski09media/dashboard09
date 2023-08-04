@@ -16,6 +16,7 @@ export default function DateRangePickerComp() {
       isoWeek={true}
       value={dateRange}
       appearance={"default"}
+      className="flex-auto"
       onOk={(eventTargetValue) => {
         setdateRange(eventTargetValue);
         addDate([

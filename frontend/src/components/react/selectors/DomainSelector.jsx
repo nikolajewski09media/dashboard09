@@ -28,6 +28,7 @@ export default function InputSelector() {
           onSelect={(value) => setDomainSelection(value)}
           onClean={() => setDomainSelection(null)}
           placeholder={"Domains"}
+          className="flex-auto"
         />
       )}
     </>

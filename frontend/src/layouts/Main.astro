@@ -17,19 +17,19 @@ import ProductOwnerSelector from "../components/react/selectors/ProductOwnerSele
 
 <main class="p-4 max-w-5xl md:mx-auto min-h-screen pt-20 dark:text-white">
   <CustomHeader>Dashboard</CustomHeader>
-  <Grid1x4>
+  <Grid1x4 class:list={["flex", "flex-wrap", "gap-4"]}>
     <DatePicker />
     <SelectPickerChart client:load />
     <InputSelector client:load />
   </Grid1x4>
-  <Grid1x4>
+  <Grid1x4 class:list={["flex", "flex-wrap", "gap-4"]}>
     <ProductOwnerSelector client:load />
     <GewerkeSelector client:load />
     <UntergewerkeSelector client:load />
     <DomainSelector client:load />
   </Grid1x4>
-  <Grid1x4><Charts /></Grid1x4>
-  <Grid1x4><Table /></Grid1x4>
+  <Grid1x4 class:list={[]}><Charts /></Grid1x4>
+  <Grid1x4 class:list={[]}><Table /></Grid1x4>
 
   <!-- <Grid2x4 /> -->
   <!-- <Grid4x4 /> -->

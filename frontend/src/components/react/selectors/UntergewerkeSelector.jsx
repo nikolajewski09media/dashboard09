@@ -38,6 +38,7 @@ export default function InputSelector() {
           onSelect={(value) => setUnterGewerkSelection(value)}
           onClean={() => setUnterGewerkSelection(null)}
           placeholder={"Untergewerke"}
+          className="flex-auto"
         />
       )}
     </>

@@ -9,6 +9,7 @@ export default function SelectPickerChart() {
         { label: "Linien Diagram", value: "ld" },
       ]}
       style={{ width: 224 }}
+      className="flex-auto"
       defaultValue={"bd"}
       cleanable={false}
       onSelect={(value) => {

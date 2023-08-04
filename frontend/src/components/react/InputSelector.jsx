@@ -18,6 +18,7 @@ export default function InputSelector() {
       cleanable={false}
       value={$aggregatedMethod}
       onSelect={(value) => setAggregatedMethod(value)}
+      className="flex-auto"
     />
   );
 }

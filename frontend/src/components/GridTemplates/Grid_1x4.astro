@@ -1,3 +1,12 @@
-<div class="rounded-lg border-gray-300 dark:border-gray-600 h-100 mb-4">
+---
+const classList = Astro.props["class:list"];
+---
+
+<div
+  class:list={[
+    "rounded-xl shadow-md bg-white p-5 border-gray-300 dark:border-gray-600 h-100 mb-4",
+    ...classList,
+  ]}
+>
   <slot />
 </div>

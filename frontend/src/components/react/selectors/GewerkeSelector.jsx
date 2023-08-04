@@ -31,6 +31,7 @@ export default function InputSelector() {
           onSelect={(value) => setGewerkSelection(value)}
           onClean={() => setGewerkSelection(null)}
           placeholder={"Gewerke"}
+          className="flex-auto"
         />
       )}
     </>
