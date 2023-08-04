@@ -15,8 +15,8 @@ import ProductOwnerSelector from "../components/react/selectors/ProductOwnerSele
 // import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
 ---
 
-<main class="p-4 max-w-5xl md:mx-auto min-h-screen pt-20 dark:text-white">
-  <CustomHeader>Dashboard</CustomHeader>
+<main class="p-4 max-w-5xl md:mx-auto min-h-screen dark:text-white">
+  <CustomHeader>Dashboard 09</CustomHeader>
   <Grid1x4 class:list={["flex", "flex-wrap", "gap-4"]}>
     <DatePicker />
     <SelectPickerChart client:load />
@@ -30,7 +30,13 @@ import ProductOwnerSelector from "../components/react/selectors/ProductOwnerSele
   </Grid1x4>
   <Grid1x4 class:list={[]}><Charts /></Grid1x4>
   <Grid1x4 class:list={[]}><Table /></Grid1x4>
-
+  <form action="/api/auth/signout">
+    <button
+      type="submit"
+      class="w-auto bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition"
+      >Sign out</button
+    >
+  </form>
   <!-- <Grid2x4 /> -->
   <!-- <Grid4x4 /> -->
   <!-- <Grid4x4 /> -->

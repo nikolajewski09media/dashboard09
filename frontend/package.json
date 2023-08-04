@@ -30,6 +30,8 @@
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "date-fns": "^2.30.0",
+    "firebase": "^10.1.0",
+    "firebase-admin": "^11.10.1",
     "flowbite": "^1.6.6",
     "flowbite-datepicker": "^1.2.2",
     "lucide-react": "^0.249.0",
