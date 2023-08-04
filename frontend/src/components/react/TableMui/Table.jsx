@@ -23,7 +23,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
 import { $fetchedData, dates } from "../../../utils/dataStore";
 import { useStore } from "@nanostores/react";
-import { getDataInRangeNew } from "../../../utils/dataStore";
+import { getDataInRangeNew, getDataInRange } from "../../../utils/dataStore";
 function createData(name, clicks) {
   return {
     name,
@@ -229,9 +229,8 @@ export default function EnhancedTable({ initalData }) {
 
   React.useEffect(() => {
     async function fetchData() {
-      const data = await useStore($fetchedData);
-      console.log(data);
-      const rowsArr = getDataInRangeNew(data, $dates);
+      const data = await $fetchedData.get();
+      const rowsArr = await getDataInRange(data, $dates);
       setRows(rowsArr);
     }
     fetchData();

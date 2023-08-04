@@ -52,13 +52,9 @@ const fetchedData = async () =>
 
 export const $fetchedData = atom(fetchedData());
 
-export async function getDataInRange(dates, toExclude = "Paid Search") {
+export async function getDataInRange(data, dates, toExclude = "Paid Search") {
   const [startDate, endDate] = dates;
-  const data = (
-    await axios.get(
-      "https://agitated-rubin.82-165-243-146.plesk.page/api/allProperties"
-    )
-  ).data;
+
   const rowData = [];
 
   for (let i = 0; i < data.length; i++) {

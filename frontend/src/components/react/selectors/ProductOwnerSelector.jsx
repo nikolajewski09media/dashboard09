@@ -14,7 +14,7 @@ export default function InputSelector() {
   useEffect(() => {
     async function dataFetch() {
       const data = await $fetchedData.get();
-      console.log(data);
+
       const poSet = new Set(data.map((item) => item.po)); // Ein Set erstellen, das eindeutige 'gewerk'-Werte aus den Daten enthält
       const poArray = [...poSet].map((item) => ({
         label: item,
