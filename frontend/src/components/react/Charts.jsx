@@ -7,6 +7,7 @@ import LineChart from "./charts/LineChart.jsx";
 import { charts } from "../../utils/chartStore.js";
 import { useStore } from "@nanostores/react";
 import {
+  $fetchedData,
   dates,
   domainSelection,
   getDataInRangeNew,
@@ -46,33 +47,39 @@ export default function Charts({ initialData }) {
   const $productOwnerSelection = useStore(productOwnerSelection);
 
   useEffect(() => {
-    getDataInRangeNew(
-      $dates,
-      $aggregatedMethod,
-      $domainSelection,
-      $productOwnerSelection,
-      $gewerkSelection,
-      $unterGewerkSelection
-    ).then((newData) =>
-      setChartData({
-        labels: newData.map((data) => data.name),
-        datasets: [
-          {
-            label: "Sessions",
-            data: newData.map((data) => data.clicks),
-            backgroundColor: [
-              "rgba(75,192,192,1)",
-              "#ecf0f1",
-              "#50AF95",
-              "#f3ba2f",
-              "#2a71d0",
-            ],
-            borderColor: "black",
-            borderWidth: 2,
-          },
-        ],
-      })
-    );
+    async function dataFetch() {
+      const data = $fetchedData.get();
+      getDataInRangeNew(
+        data,
+        $dates,
+        $aggregatedMethod,
+        $domainSelection,
+        $productOwnerSelection,
+        $gewerkSelection,
+        $unterGewerkSelection
+      ).then((newData) =>
+        setChartData({
+          labels: newData.map((data) => data.name),
+          datasets: [
+            {
+              label: "Sessions",
+              data: newData.map((data) => data.clicks),
+              backgroundColor: [
+                "rgba(75,192,192,1)",
+                "#ecf0f1",
+                "#50AF95",
+                "#f3ba2f",
+                "#2a71d0",
+              ],
+              borderColor: "black",
+              borderWidth: 2,
+            },
+          ],
+        })
+      );
+    }
+
+    dataFetch();
   }, [
     $dates,
     $aggregatedMethod,

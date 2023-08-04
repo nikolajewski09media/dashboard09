@@ -43,10 +43,21 @@ export function setProductOwnerSelection(dS) {
   productOwnerSelection.set(dS);
 }
 
+const fetchedData = (
+  await axios.get(
+    "https://agitated-rubin.82-165-243-146.plesk.page/api/getAllPropertiesWithStats"
+  )
+).data;
+
+export const $fetchedData = atom(fetchedData);
+
 export async function getDataInRange(dates, toExclude = "Paid Search") {
   const [startDate, endDate] = dates;
-  const data = (await axios.get("http://localhost:3000/api/allProperties"))
-    .data;
+  const data = (
+    await axios.get(
+      "https://agitated-rubin.82-165-243-146.plesk.page/api/allProperties"
+    )
+  ).data;
   const rowData = [];
 
   for (let i = 0; i < data.length; i++) {
@@ -74,6 +85,7 @@ export async function getDataInRange(dates, toExclude = "Paid Search") {
 
 // Diese Funktion ruft aggregierte Daten aus einer API basierend auf einem Zeitraum, einer Aggregationsmethode und einem optionalen Domainnamen ab.
 export async function getDataInRangeNew(
+  data,
   dates, // Der Zeitraum, für den die Daten abgerufen werden sollen (Array mit Start- und Enddatum)
   aggregation = "monthly", // Die Aggregationsmethode (optional, Standardwert ist "monthly")
   domain = null, // Der Domainname, nach dem gefiltert werden soll (optional, Standardwert ist null)
@@ -83,9 +95,7 @@ export async function getDataInRangeNew(
   toExclude = "Paid Search" // Der Schlüsselwert, der aus den Berichten ausgeschlossen werden soll (optional, Standardwert ist "Paid Search")
 ) {
   const [startDate, endDate] = dates; // Start- und Enddatum aus dem 'dates'-Array extrahieren
-  const data = (
-    await axios.get("http://localhost:3000/api/getAllPropertiesWithStats")
-  ).data; // Daten von der API abrufen und in der Variable 'data' speichern
+  // Daten von der API abrufen und in der Variable 'data' speichern
 
   const aggregatedData = {}; // Ein leeres Objekt erstellen, in dem die aggregierten Daten gespeichert werden
 
