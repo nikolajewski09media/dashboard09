@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "rsuite/dist/rsuite-no-reset.min.css";
-import DateRangePicker from "rsuite/DateRangePicker";
+import { DateRangePicker } from "rsuite";
 
 import { addDate, sevenDaysAgo, yesterday } from "../../../utils/dataStore.js";
 
