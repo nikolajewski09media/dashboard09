@@ -5,7 +5,7 @@ import cloudflare from "@astrojs/cloudflare";
 import vercel from "@astrojs/vercel/serverless";
 import node from "@astrojs/node";
 
-import netlify from "@astrojs/netlify/edge-functions";
+import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,6 +13,6 @@ export default defineConfig({
   output: "server",
   adapter: netlify(),
   build: {
-    split: true,
+    builders: true,
   },
 });
