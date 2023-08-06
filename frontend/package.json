@@ -44,7 +44,7 @@
     "react-datepicker": "^4.14.1",
     "react-day-picker": "^8.8.0",
     "react-dom": "^18.2.0",
-    "rsuite": "^5.37.3",
+    "rsuite": "^4.0.0",
     "tailwind-merge": "^1.13.2",
     "tailwindcss": "^3.3.2",
     "tailwindcss-animate": "^1.0.6"

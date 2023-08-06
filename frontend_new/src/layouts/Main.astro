@@ -2,7 +2,6 @@
 import Table from "../components/Table.astro";
 import CustomHeader from "../components/CustomHeader.astro";
 import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
-import DatePicker from "../components/DatePicker.astro";
 import Charts from "../components/Charts.astro";
 import SelectPickerChart from "../components/react/rsuite/SelectPickerChart.jsx";
 import InputSelector from "../components/react/InputSelector.jsx";
@@ -10,15 +9,13 @@ import DomainSelector from "../components/react/selectors/DomainSelector.jsx";
 import GewerkeSelector from "../components/react/selectors/GewerkeSelector.jsx";
 import UntergewerkeSelector from "../components/react/selectors/UntergewerkeSelector.jsx";
 import ProductOwnerSelector from "../components/react/selectors/ProductOwnerSelector.jsx";
-
-// import Grid4x4 from "../components/GridTemplates/Grid_4x4.astro";
-// import Grid2x4 from "../components/GridTemplates/Grid_2x4.astro";
+import DatePickerWithRange from "../components/react/rsuite/DateRangePicker.jsx";
 ---
 
 <main class="p-4 max-w-5xl md:mx-auto min-h-screen dark:text-white">
   <CustomHeader>Dashboard 09</CustomHeader>
   <Grid1x4 class:list={["flex", "flex-wrap", "gap-4"]}>
-    <DatePicker />
+    <DatePickerWithRange client:load />
     <SelectPickerChart client:load />
     <InputSelector client:load />
   </Grid1x4>
@@ -30,14 +27,11 @@ import ProductOwnerSelector from "../components/react/selectors/ProductOwnerSele
   </Grid1x4>
   <Grid1x4 class:list={[]}><Charts /></Grid1x4>
   <Grid1x4 class:list={[]}><Table /></Grid1x4>
-  <form action="/api/auth/signout">
+  <form action="">
     <button
       type="submit"
       class="w-auto bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition"
       >Sign out</button
     >
   </form>
-  <!-- <Grid2x4 /> -->
-  <!-- <Grid4x4 /> -->
-  <!-- <Grid4x4 /> -->
 </main>
