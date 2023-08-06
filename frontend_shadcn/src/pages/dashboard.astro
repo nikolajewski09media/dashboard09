@@ -1,0 +1,19 @@
+---
+import "@/styles/globals.css";
+import LayoutDashboard from "../layouts/LayoutDashboard.astro";
+import H1_Custom from "../components/H1_Custom.astro";
+import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
+
+import { DatePickerWithRange } from "../components/react/DatePickerWithRange.tsx";
+---
+
+<LayoutDashboard title="home">
+  <header>
+    <H1_Custom>Dashboard09</H1_Custom>
+  </header>
+  <main>
+    <Grid1x4>
+      <DatePickerWithRange client:load />
+    </Grid1x4>
+  </main>
+</LayoutDashboard>
