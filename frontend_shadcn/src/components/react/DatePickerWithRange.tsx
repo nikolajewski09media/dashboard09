@@ -1,9 +1,8 @@
 import * as React from "react"
-import { addDays, format } from "date-fns"
+import { format } from "date-fns"
+import { de } from 'date-fns/locale';
 import { Calendar as CalendarIcon } from "lucide-react"
 import { DateRange } from "react-day-picker"
-
-import { de } from 'date-fns/locale';
 
 import { useStore } from "@nanostores/react"
 import { dates } from "@/utils/dataStore"
