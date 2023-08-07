@@ -58,8 +58,12 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
   <header>
     <H1_Custom>Dashboard09</H1_Custom>
   </header>
-  <main class="mx-auto max-w-5xl">
-    <Grid1x4 class:list={["flex flex-wrap gap-12"]}>
+  <main class="mx-auto max-w-5xl p-4">
+    <Grid1x4
+      class:list={[
+        "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
+      ]}
+    >
       <DatePickerWithRange client:load />
       <Selector
         keyForValue={"diagramArt"}
@@ -84,7 +88,11 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
         client:load
       />
     </Grid1x4>
-    <Grid1x4 class:list={["flex flex-wrap gap-12"]}>
+    <Grid1x4
+      class:list={[
+        "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
+      ]}
+    >
       <Selector
         keyForValue={"productOwnerSelection"}
         items={poArray}

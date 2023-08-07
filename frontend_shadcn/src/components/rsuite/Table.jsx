@@ -77,14 +77,15 @@ export default function CustomTable(props) {
       </Table>
       <div style={{ padding: 20 }}>
         <Pagination
-          prev
-          next
+          // prev
+          // next
+          autoHeight={true}
           first
-          last
+          // last
           boundaryLinks
           maxButtons={5}
-          size="md"
-          layout={["total", "-", "limit", "|", "pager"]}
+          size="lg"
+          layout={["limit", "|", "pager"]}
           total={defaultData.length}
           limitOptions={[10, 30, 50]}
           limit={limit}

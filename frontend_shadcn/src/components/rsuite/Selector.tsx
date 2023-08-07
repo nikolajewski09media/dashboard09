@@ -11,7 +11,7 @@ export default function Selector(props: any) {
       data={props.items}
       placeholder={props.placeholder}
       value={selectorValues[props.keyForValue]}
-      style={{ width: 205 }}
+      style={{ minWidth: 205 }}
       cleanable={!props.NotCleanable}
       onClean={() =>
         setSelectorStates({
