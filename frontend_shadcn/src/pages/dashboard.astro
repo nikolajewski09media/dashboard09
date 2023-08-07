@@ -1,25 +1,123 @@
 ---
+import axios from "axios";
+
+import "rsuite/dist/rsuite.min.css";
 import "@/styles/globals.css";
-import LayoutDashboard from "../layouts/LayoutDashboard.astro";
+
+import Table from "@/components/rsuite/Table.jsx";
+import Selector from "@/components/rsuite/Selector.tsx";
+import { Button } from "@/components/ui/button";
+import { DatePickerWithRange } from "@/components/react/DatePickerWithRange.tsx";
+import Charts from "@/components/react/Charts.jsx";
+
+import Layout from "../layouts/Layout.astro";
 import H1_Custom from "../components/H1_Custom.astro";
 import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
-import { Button } from "@/components/ui/button";
-import { DatePickerWithRange } from "../components/react/DatePickerWithRange.tsx";
+
+import { dates, getDataInRangeNew, getDataInRange } from "@/utils/dataStore";
+
+const domainName =
+  import.meta.env.PUBLIC_BE_DOMAIN_NAME || "http://localhost:3000";
+
+const fetchedData = await axios.get(
+  domainName + "/api/getAllPropertiesWithStats"
+);
+
+const data = fetchedData.data;
+const $dates = dates.get();
+const initialData = getDataInRangeNew(data, $dates);
+const initialData2 = getDataInRange(data, $dates);
+
+const poSet = new Set(data.map((item: { po: string }) => item.po));
+const poArray = [...poSet].map((item) => ({
+  label: item,
+  value: item,
+}));
+
+const gewerkeSet = new Set(data.map((item: { gewerk: string }) => item.gewerk));
+const gewerkeArray = [...gewerkeSet].map((item) => ({
+  label: item,
+  value: item,
+}));
+
+const unterGewerkeSet = new Set(
+  data
+    .map(
+      (item: { untergewerk: [string] }) =>
+        item.untergewerk && item.untergewerk[0]
+    )
+    .filter((item: string) => item !== undefined)
+);
+const unterGewerke = [...unterGewerkeSet].map((item) => ({
+  label: item,
+  value: item,
+}));
 ---
 
-<LayoutDashboard title="home">
+<Layout title="Dashboard">
   <header>
     <H1_Custom>Dashboard09</H1_Custom>
   </header>
-  <main class="mx-auto max-w-2xl">
-    <Grid1x4>
+  <main class="mx-auto max-w-5xl">
+    <Grid1x4 class:list={["flex flex-wrap gap-12"]}>
       <DatePickerWithRange client:load />
+      <Selector
+        keyForValue={"diagramArt"}
+        items={[
+          { label: "Balken Diagramm", value: "bd" },
+          { label: "Linien Diagramm", value: "ld" },
+        ]}
+        placeholder={"Balken Diagramm"}
+        NotCleanable={true}
+        client:load
+      />
+
+      <Selector
+        keyForValue={"aggregatedMethod"}
+        items={[
+          { label: "Monatlich", value: "monthly" },
+          { label: "Wöchentlich", value: "weekly" },
+          { label: "Täglich", value: "daily" },
+        ]}
+        placeholder={"Monatlich"}
+        NotCleanable={true}
+        client:load
+      />
+    </Grid1x4>
+    <Grid1x4 class:list={["flex flex-wrap gap-12"]}>
+      <Selector
+        keyForValue={"productOwnerSelection"}
+        items={poArray}
+        placeholder={"Product Owner"}
+        client:load
+      />
+      <Selector
+        keyForValue={"gewerkSelection"}
+        items={gewerkeArray}
+        placeholder={"Gewerk"}
+        client:load
+      />
+      <Selector
+        keyForValue={"unterGewerkSelection"}
+        items={unterGewerke}
+        placeholder={"Untergewerk"}
+        client:load
+      />
+      <Selector
+        keyForValue={"domainSelection"}
+        items={data.map((item: { label: string }) => ({
+          label: item.label,
+          value: item.label,
+        }))}
+        placeholder={"Domain"}
+        client:load
+      />
     </Grid1x4>
     <Grid1x4>
-      <DatePickerWithRange client:load />
+      <Charts items={data} initialData={initialData} client:load />
     </Grid1x4>
     <Grid1x4>
-      <DatePickerWithRange client:load />
+      <Table items={data} initalData={initialData2} client:load />
     </Grid1x4>
   </main>
   <footer class="mx-auto max-w-2xl">
@@ -27,4 +125,4 @@ import { DatePickerWithRange } from "../components/react/DatePickerWithRange.tsx
       <Button type="submit">Sign out</Button>
     </form>
   </footer>
-</LayoutDashboard>
+</Layout>

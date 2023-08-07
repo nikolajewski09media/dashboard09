@@ -2,7 +2,7 @@ import React from "react";
 import { Line } from "react-chartjs-2";
 function LineChart({ chartData }) {
   return (
-    <div style={{ maxWidth: "48 rem" }} className="chart-container">
+    <div className="chart-container max-w-4xl">
       <Line
         data={chartData}
         options={{

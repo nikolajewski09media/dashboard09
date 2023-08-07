@@ -2,12 +2,12 @@ import { Table, Pagination } from "rsuite";
 import React from "react";
 const { Column, HeaderCell, Cell } = Table;
 import { useStore } from "@nanostores/react";
-import { dates, $fetchedData, getDataInRange } from "../../../utils/dataStore";
+import { dates, getDataInRange } from "@/utils/dataStore";
 
-export default function CustomTable({ initalData }) {
+export default function CustomTable(props) {
   const [limit, setLimit] = React.useState(10);
   const [page, setPage] = React.useState(1);
-  const [defaultData, setDefaultData] = React.useState(initalData);
+  const [defaultData, setDefaultData] = React.useState(props.initalData);
   const [sortColumn, setSortColumn] = React.useState("clicks");
   const [sortType, setSortType] = React.useState("desc");
   const [loading, setLoading] = React.useState(false);
@@ -34,29 +34,25 @@ export default function CustomTable({ initalData }) {
   const $dates = useStore(dates);
 
   React.useEffect(() => {
-    async function fetchData() {
-      const data = await $fetchedData.get();
-      const rowsArr = await getDataInRange(data, $dates);
-      if (sortColumn && sortType) {
-        rowsArr.sort((a, b) => {
-          let x = a[sortColumn];
-          let y = b[sortColumn];
-          if (typeof x === "string") {
-            x = x.charCodeAt();
-          }
-          if (typeof y === "string") {
-            y = y.charCodeAt();
-          }
-          if (sortType === "desc") {
-            return y - x;
-          } else {
-            return x - y;
-          }
-        });
-      }
-      setDefaultData(rowsArr);
+    const rowsArr = getDataInRange(props.items, $dates);
+    if (sortColumn && sortType) {
+      rowsArr.sort((a, b) => {
+        let x = a[sortColumn];
+        let y = b[sortColumn];
+        if (typeof x === "string") {
+          x = x.charCodeAt();
+        }
+        if (typeof y === "string") {
+          y = y.charCodeAt();
+        }
+        if (sortType === "desc") {
+          return y - x;
+        } else {
+          return x - y;
+        }
+      });
     }
-    fetchData();
+    setDefaultData(rowsArr);
   }, [$dates, sortColumn, sortType]);
 
   return (

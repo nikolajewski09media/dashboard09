@@ -1,7 +1,7 @@
 import { Bar } from "react-chartjs-2";
 export const BarChart = ({ chartData }) => {
   return (
-    <div style={{ maxWidth: "48 rem" }} className="chart-container">
+    <div className="chart-container max-w-4xl">
       <Bar
         data={chartData}
         options={{

@@ -5,7 +5,7 @@ import { Calendar as CalendarIcon } from "lucide-react"
 import { DateRange } from "react-day-picker"
 
 import { useStore } from "@nanostores/react"
-import { dates } from "@/utils/dataStore"
+import { dates, setDates } from "@/utils/dataStore"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -22,9 +22,10 @@ export function DatePickerWithRange({
 
   const $dates = useStore(dates);
   const [date, setDate] = React.useState<DateRange | undefined>({
-    from: $dates[0],
-    to: $dates[1],
+    from: $dates.from,
+    to: $dates.to,
   })
+
 
   return (
     <div className={cn("grid gap-2", className)}>
@@ -34,7 +35,7 @@ export function DatePickerWithRange({
             id="date"
             variant={"outline"}
             className={cn(
-              "w-[300px] justify-start text-left font-normal",
+              "max-w-[205px] justify-start text-left font-normal",
               !date && "text-muted-foreground"
             )}
           >
@@ -59,7 +60,10 @@ export function DatePickerWithRange({
             mode="range"
             defaultMonth={date?.from}
             selected={date}
-            onSelect={setDate}
+            onSelect={(dateRange, day) =>{
+              setDate({from: dateRange?.from || day, to: dateRange?.to || day});
+              setDates({from: dateRange?.from || day, to: dateRange?.to || day});
+            }}
             numberOfMonths={2}
             locale={de}
             weekStartsOn={1}
