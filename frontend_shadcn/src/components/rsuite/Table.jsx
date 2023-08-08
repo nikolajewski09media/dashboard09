@@ -79,7 +79,6 @@ export default function CustomTable(props) {
         <Pagination
           // prev
           // next
-          autoHeight={true}
           first
           // last
           boundaryLinks
