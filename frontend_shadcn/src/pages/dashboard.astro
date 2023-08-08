@@ -6,7 +6,7 @@ import "rsuite/dist/rsuite.min.css";
 import "@/styles/globals.css";
 
 import Table from "@/components/rsuite/Table.jsx";
-import Selector from "@/components/react/Selector";
+import {Selector, MultiSelector} from "@/components/react/Selector";
 import { Button } from "@/components/ui/button";
 import { DatePickerWithRange } from "@/components/react/DatePickerWithRange.tsx";
 import Charts from "@/components/react/Charts.jsx";
@@ -91,10 +91,10 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
         "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
       ]}
     >
-      <Selector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: null}} client:load/>
-      <Selector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: null}} client:load/>
-      <Selector options={unterGewerke} clearable={true} placeholder={{label: "Untergewerk", value: null}} client:load/>
-      <Selector options={data.map((item: { label: string }) => ({
+      <MultiSelector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: null}} client:load/>
+      <MultiSelector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: null}} client:load/>
+      <MultiSelector options={unterGewerke} clearable={true} placeholder={{label: "Untergewerk", value: null}} client:load/>
+      <MultiSelector options={data.map((item: { label: string }) => ({
         label: item.label,
         value: item.label,
       }))} clearable={true} placeholder={{label: "Domain", value: null}} client:load/>

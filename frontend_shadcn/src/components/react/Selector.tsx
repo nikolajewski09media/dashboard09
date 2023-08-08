@@ -2,19 +2,30 @@ import React from "react";
 import styles from "./selector.module.css";
 
 type SelectorOption = {
-  label: string;
-  value: string;
+  label: string | undefined;
+  value: string | undefined;
+};
+
+type MultipleSelectorProps = {
+  multiple: true;
+  value: SelectorOption[];
+  onChange: (value: SelectorOption[]) => void;
+};
+
+type SingleSelectorProps = {
+  multiple?: false;
+  value?: SelectorOption;
+  onChange: (value: SelectorOption | undefined) => void;
 };
 
 type SelectorProps = {
   options: SelectorOption[];
-  value?: SelectorOption;
-  onChange: (value: SelectorOption | undefined) => void;
-  clearable?: boolean;
+  clearable?: boolean | boolean;
   placeholder?: SelectorOption;
-};
+} & (SingleSelectorProps | MultipleSelectorProps);
 
 function Select({
+  multiple,
   value,
   onChange,
   options,
@@ -26,19 +37,27 @@ function Select({
   const [highlightedIndex, setHighlightedIndex] = React.useState(0);
 
   function clearOptions() {
-    onChange(placeholder || undefined);
+    multiple ? onChange([placeholder]) : onChange(placeholder);
     setIsCleanable(true);
   }
 
   function selectOption(option: SelectorOption) {
-    if (option !== value) {
-      onChange(option);
-      setIsCleanable(false);
+    if (multiple) {
+      if (value.includes(option)) {
+        onChange(value.filter((o) => o !== option));
+      } else {
+        onChange([...value, option]);
+      }
+    } else {
+      if (option !== value) {
+        onChange(option);
+        setIsCleanable(false);
+      }
     }
   }
 
   function isOpenSelected(option: SelectorOption) {
-    return option === value;
+    return multiple ? value.includes(option) : option === value;
   }
 
   React.useEffect(() => {
@@ -52,7 +71,26 @@ function Select({
       tabIndex={0}
       className={styles.container}
     >
-      <span className={styles.value}>{value?.label}</span>
+      <span className={styles.value}>
+        {multiple && value.length > 1
+          ? value.map((v) => {
+              if (v.value)
+                return (
+                  <button
+                    key={v.label}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      selectOption(v);
+                    }}
+                    className={styles["option-badge"]}
+                  >
+                    {v.label}{" "}
+                    <span className={styles["remove-btn"]}>&times;</span>
+                  </button>
+                );
+            })
+          : value?.label || value[0].label}
+      </span>
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -88,21 +126,47 @@ function Select({
   );
 }
 
-export default function Selector(props: any) {
-  const [value, setValue] = React.useState<(typeof options)[0] | undefined>({
-    label: props.placeholder.label,
-    value: props.placeholder.value,
+export function Selector({ placeholder, clearable, options }: SelectorProps) {
+  const [value, setValue] = React.useState<SelectorOption | undefined>({
+    label: placeholder?.label,
+    value: placeholder?.value,
   });
   return (
     <Select
-      options={props.options}
+      options={options}
       value={value}
       onChange={(o) => setValue(o)}
       placeholder={{
-        label: props.placeholder.label,
-        value: props.placeholder.value,
+        label: placeholder?.label,
+        value: placeholder?.value,
       }}
-      clearable={props.clearable}
+      clearable={clearable}
+    />
+  );
+}
+
+export function MultiSelector({
+  placeholder,
+  clearable,
+  options,
+}: SelectorProps) {
+  const [value, setValue] = React.useState<SelectorOption[]>([
+    {
+      label: placeholder?.label,
+      value: placeholder?.value,
+    },
+  ]);
+  return (
+    <Select
+      multiple
+      options={options}
+      value={value}
+      onChange={(o) => setValue(o)}
+      placeholder={{
+        label: placeholder?.label,
+        value: placeholder?.value,
+      }}
+      clearable={clearable}
     />
   );
 }

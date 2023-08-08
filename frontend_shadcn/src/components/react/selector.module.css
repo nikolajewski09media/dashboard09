@@ -17,6 +17,9 @@
 
 .value {
   flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
 }
 
 .clear-btn {
@@ -89,4 +92,43 @@
 .option.highlighted {
   background-color: hsl(210 40% 96.1%);
   color: hsl(222.2 47.4% 11.2%);
+}
+
+.options::-webkit-scrollbar {
+  width: 0.45em;
+}
+.options::-webkit-scrollbar-track {
+  border-radius: 0.25em;
+  margin-block: 0.3em;
+}
+
+.options::-webkit-scrollbar-thumb {
+  background: hsl(214.3 31.8% 91.4%);
+  border: 0.25em solid hsl(214.3 31.8% 91.4%);
+  border-radius: 100vw;
+}
+
+.options::-webkit-scrollbar-thumb:hover {
+  background: hsl(214.3 31.8% 5% /1);
+}
+
+.option-badge {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+  gap: 0.25em;
+  border: 0.05em solid hsl(214.3 31.8% 91.4%);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.option-badge:hover,
+.option-badge:focus {
+  background-color: hsl(222.2 47.4% 11.2%);
+  color: hsl(210 40% 98%);
+}
+
+.remove-btn {
+  padding: 0.25em 0;
+  font-size: 1.25em;
 }
