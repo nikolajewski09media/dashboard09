@@ -1,0 +1,92 @@
+.container {
+  position: relative;
+  min-width: 205px;
+  min-height: 2.5em;
+  border: 0.05em solid hsl(214.3 31.8% 91.4%);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.container:hover {
+  background-color: hsl(210 40% 96.1%);
+}
+
+.value {
+  flex-grow: 1;
+}
+
+.clear-btn {
+  background: none;
+  color: hsl(217, 4%, 62%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1em;
+}
+
+.clear-btn:focus,
+.clear-btn:hover {
+  color: black;
+}
+
+.divider {
+  background-color: hsl(217, 4%, 62%);
+  align-self: stretch;
+  width: 0.05em;
+}
+
+.caret {
+  translate: 0 25%;
+  border: 0.25em solid transparent;
+  border-top-color: hsl(217, 4%, 62%);
+}
+
+.options {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 35em;
+  overflow-y: auto;
+  border: 0.05em solid hsl(214.3 31.8% 91.4%);
+  border-radius: 0.25rem;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: white;
+  z-index: 100;
+}
+
+.options li {
+  padding: 0.75em;
+  border-radius: 0.25rem;
+}
+
+.options.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: hsl(222.2 47.4% 11.2%);
+  color: hsl(210 40% 98%);
+}
+
+.option.highlighted {
+  background-color: hsl(210 40% 96.1%);
+  color: hsl(222.2 47.4% 11.2%);
+}

@@ -1,5 +1,4 @@
 import { atom } from "nanostores";
-import axios from "axios";
 
 const domainName =
   import.meta.env.PUBLIC_BE_DOMAIN_NAME || "http://localhost:3000";
@@ -23,8 +22,8 @@ export const selectorStates = atom({
   domainSelection: null,
 });
 
-export function setSelectorStates(stateObj) {
-  selectorStates.set(stateObj);
+export function setSelectorStates(stateObj, key, value) {
+  selectorStates.set({ ...stateObj, [key]: value });
 }
 
 export function getDataInRange(data, dates, toExclude = "Paid Search") {

@@ -1,11 +1,12 @@
 ---
 import axios from "axios";
+import { atom } from "nanostores";
 
 import "rsuite/dist/rsuite.min.css";
 import "@/styles/globals.css";
 
 import Table from "@/components/rsuite/Table.jsx";
-import Selector from "@/components/rsuite/Selector.tsx";
+import Selector from "@/components/react/Selector";
 import { Button } from "@/components/ui/button";
 import { DatePickerWithRange } from "@/components/react/DatePickerWithRange.tsx";
 import Charts from "@/components/react/Charts.jsx";
@@ -14,7 +15,13 @@ import Layout from "../layouts/Layout.astro";
 import H1_Custom from "../components/H1_Custom.astro";
 import Grid1x4 from "../components/GridTemplates/Grid_1x4.astro";
 
-import { dates, getDataInRangeNew, getDataInRange } from "@/utils/dataStore";
+import {
+  dates,
+  getDataInRangeNew,
+  getDataInRange,
+  selectorStates,
+  setSelectorStates,
+} from "@/utils/dataStore";
 
 const domainName =
   import.meta.env.PUBLIC_BE_DOMAIN_NAME || "http://localhost:3000";
@@ -52,6 +59,10 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
   label: item,
   value: item,
 }));
+
+
+
+      
 ---
 
 <Layout title="Dashboard">
@@ -65,26 +76,38 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
       ]}
     >
       <DatePickerWithRange client:load />
-      <Selector
-        keyForValue={"diagramArt"}
-        items={[
-          { label: "Balken Diagramm", value: "bd" },
-          { label: "Linien Diagramm", value: "ld" },
-        ]}
-        placeholder={"Balken Diagramm"}
-        NotCleanable={true}
-        client:load
-      />
-
-      <Selector
-        keyForValue={"aggregatedMethod"}
-        items={[
+      <Selector options={[
+        { label: "Balken Diagramm", value: "bd" },
+        { label: "Linien Diagramm", value: "ld" },
+      ]} placeholder={{label: "Balken Diagramm", value: "bd"}} client:load/>
+      <Selector options={[
+        { label: "Monatlich", value: "monthly" },
+        { label: "Wöchentlich", value: "weekly" },
+        { label: "Täglich", value: "daily" },
+      ]} placeholder={{label: "Monatlich", value: "monthly"}} client:load/>
+      </Grid1x4>
+      <Grid1x4
+      class:list={[
+        "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
+      ]}
+    >
+      <Selector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: null}} client:load/>
+      <Selector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: null}} client:load/>
+      <Selector options={unterGewerke} clearable={true} placeholder={{label: "Untergewerk", value: null}} client:load/>
+      <Selector options={data.map((item: { label: string }) => ({
+        label: item.label,
+        value: item.label,
+      }))} clearable={true} placeholder={{label: "Domain", value: null}} client:load/>
+    </Grid1x4>
+      <!-- <Selector
+        onChange={(o) =>
+          setSelectorStates(selectorStates.get(), "aggregatedMethod", o)}
+        options={[
           { label: "Monatlich", value: "monthly" },
           { label: "Wöchentlich", value: "weekly" },
           { label: "Täglich", value: "daily" },
         ]}
-        placeholder={"Monatlich"}
-        NotCleanable={true}
+        value={{ label: "Monatlich", value: "monthly" }}
         client:load
       />
     </Grid1x4>
@@ -94,33 +117,37 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
       ]}
     >
       <Selector
+        onChange={(o) =>
+          setSelectorStates(selectorStates.get(), "productOwnerSelection", o)}
         keyForValue={"productOwnerSelection"}
-        items={poArray}
+        options={poArray}
         placeholder={"Product Owner"}
         client:load
       />
       <Selector
+        onChange={(o) =>
+          setSelectorStates(selectorStates.get(), "gewerkSelection", o)}
         keyForValue={"gewerkSelection"}
-        items={gewerkeArray}
+        options={gewerkeArray}
         placeholder={"Gewerk"}
         client:load
       />
       <Selector
-        keyForValue={"unterGewerkSelection"}
-        items={unterGewerke}
-        placeholder={"Untergewerk"}
+        onChange={(o) =>
+          setSelectorStates(selectorStates.get(), "unterGewerkSelection", o)}
+        options={unterGewerke}
         client:load
       />
       <Selector
-        keyForValue={"domainSelection"}
-        items={data.map((item: { label: string }) => ({
+        onChange={(o) =>
+          setSelectorStates(selectorStates.get(), "domainSelection", o)}
+        options={data.map((item: { label: string }) => ({
           label: item.label,
           value: item.label,
         }))}
-        placeholder={"Domain"}
         client:load
-      />
-    </Grid1x4>
+      /> -->
+    
     <Grid1x4>
       <Charts items={data} initialData={initialData} client:load />
     </Grid1x4>
