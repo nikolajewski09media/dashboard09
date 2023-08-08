@@ -35,6 +35,19 @@ const $dates = dates.get();
 const initialData = getDataInRangeNew(data, $dates);
 const initialData2 = getDataInRange(data, $dates);
 
+
+const diagramArtArray: SelectorOption[] = [
+        { label: "Balken Diagramm", value: "bd" },
+        { label: "Linien Diagramm", value: "ld" },
+      ];
+
+const aggMethodArray: SelectorOption[] = [
+        { label: "Monatlich", value: "monthly" },
+        { label: "Wöchentlich", value: "weekly" },
+        { label: "Täglich", value: "daily" },
+      ];
+
+
 const poSet: Set<string> = new Set(data.map((item: { po: string }) => item.po));
 const poArray: SelectorOption[]  = [...poSet].map((item: string) => ({
   label: item,
@@ -55,14 +68,16 @@ const unterGewerkeSet: Set<string> = new Set(
     )
     .filter((item: string) => item !== undefined)
 );
-const unterGewerke = [...unterGewerkeSet].map((item) => ({
+const unterGewerkeArray: SelectorOption[] = [...unterGewerkeSet].map((item) => ({
   label: item,
   value: item,
 }));
 
+const domainArray: SelectorOption[] = data.map((item: { label: string }) => ({
+        label: item.label,
+        value: item.label,
+      }))
 
-
-      
 ---
 
 <Layout title="Dashboard">
@@ -82,28 +97,20 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
       ]}
     >
       <DatePickerWithRange client:load />
-      <Selector options={[
-        { label: "Balken Diagramm", value: "bd" },
-        { label: "Linien Diagramm", value: "ld" },
-      ]} placeholder={{label: "Balken Diagramm", value: "bd"}} client:load/>
-      <Selector options={[
-        { label: "Monatlich", value: "monthly" },
-        { label: "Wöchentlich", value: "weekly" },
-        { label: "Täglich", value: "daily" },
-      ]} placeholder={{label: "Monatlich", value: "monthly"}} client:load/>
+      <Selector options={diagramArtArray} placeholder={{label: "Balken Diagramm", value: "bd"}} keyForState={"diagramArt"} client:load/>
+      <Selector options={aggMethodArray} placeholder={{label: "Monatlich", value: "monthly"}} keyForState={"aggregatedMethod"} client:load/>
       </Grid1x4>
       <Grid1x4
       class:list={[
         "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
       ]}
     >
-      <MultiSelector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: null}} client:load/>
-      <MultiSelector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: null}} client:load/>
-      <MultiSelector options={unterGewerke} clearable={true} placeholder={{label: "Untergewerk", value: null}} client:load/>
-      <MultiSelector options={data.map((item: { label: string }) => ({
-        label: item.label,
-        value: item.label,
-      }))} clearable={true} placeholder={{label: "Domain", value: null}} client:load/>
+      <MultiSelector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: []}} keyForState={"productOwnerSelection"} client:load/>
+      <MultiSelector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: []}} keyForState={"gewerkSelection"} client:load/>
+      <MultiSelector options={unterGewerkeArray} clearable={true} placeholder={{label: "Untergewerk", value: []}} keyForState={"unterGewerkSelection"} client:load/>
+      <MultiSelector options={domainArray} clearable={true} placeholder={{label: "Domain", value: []}}
+      keyForState={"domainSelection"}
+       client:load/>
     </Grid1x4>
     <Grid1x4>
       <Charts items={data} initialData={initialData} client:load />

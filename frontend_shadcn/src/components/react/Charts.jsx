@@ -1,11 +1,11 @@
+import React, { useState, useEffect } from "react";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
-import { useState, useEffect } from "react";
+import { useStore } from "@nanostores/react";
+import { dates, selectorStates, getDataInRangeNew } from "@/utils/dataStore";
 import PieChart from "@/components/charts/PieChart.jsx";
 import { BarChart } from "@/components/charts/BarChart.jsx";
 import LineChart from "@/components/charts/LineChart.jsx";
-import { useStore } from "@nanostores/react";
-import { dates, selectorStates, getDataInRangeNew } from "@/utils/dataStore";
 
 Chart.register(CategoryScale);
 
@@ -28,6 +28,7 @@ export default function Charts(props) {
       },
     ],
   });
+
   const $dates = useStore(dates);
   const {
     diagramArt,

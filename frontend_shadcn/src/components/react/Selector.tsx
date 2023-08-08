@@ -1,9 +1,17 @@
 import React, { ReactElement } from "react";
 import styles from "./selector.module.css";
+import { ChevronDown } from "lucide-react";
+
+import { useStore } from "@nanostores/react";
+import {
+  SelectorStates,
+  selectorStates,
+  setSelectorStates,
+} from "@/utils/dataStore";
 
 export type SelectorOption = {
   label?: string;
-  value?: string | null;
+  value?: string;
 };
 
 type MultipleSelectorProps = {
@@ -19,6 +27,7 @@ type SingleSelectorProps = {
 };
 
 type SelectorProps = {
+  keyForState?: string;
   options: SelectorOption[];
   clearable?: boolean;
   placeholder?: SelectorOption | any;
@@ -38,7 +47,7 @@ function Select({
 
   function clearOptions() {
     const placeholderArr: SelectorOption[] = [placeholder];
-    multiple ? onChange() : onChange(placeholder);
+    multiple ? onChange(placeholderArr) : onChange(placeholder);
     setIsCleanable(true);
   }
 
@@ -46,6 +55,9 @@ function Select({
     if (multiple) {
       if (value.includes(option)) {
         onChange(value.filter((o) => o !== option));
+        if (value.length === 1) {
+          onChange();
+        }
       } else {
         onChange([...value, option]);
       }
@@ -103,8 +115,7 @@ function Select({
       >
         &times;
       </button>
-      <div className={styles.divider}></div>
-      <div className={styles.caret}></div>
+      <ChevronDown className="h-4 w-4 opacity-50" />
       <ul className={`${styles.options} ${isOpen ? styles.show : ""}`}>
         {options.map((option, index) => (
           <li
@@ -131,16 +142,24 @@ export function Selector({
   options,
   placeholder,
   clearable,
+  keyForState,
 }: SelectorProps | any): ReactElement {
-  const [value, setValue] = React.useState<SelectorOption | undefined>({
+  const [value, setValue] = React.useState<SelectorOption>({
     label: placeholder?.label,
     value: placeholder?.value,
   });
+
+  const $selectorStates: SelectorStates = useStore(selectorStates);
+
   return (
     <Select
       options={options}
       value={value}
-      onChange={(o) => setValue(o)}
+      onChange={(o) => {
+        console.log(o);
+        setValue(o);
+        setSelectorStates($selectorStates, keyForState, o.value || null);
+      }}
       placeholder={{
         label: placeholder?.label,
         value: placeholder?.value,
@@ -154,6 +173,7 @@ export function MultiSelector({
   placeholder,
   clearable,
   options,
+  keyForState,
 }: SelectorProps | any): ReactElement {
   const [value, setValue] = React.useState<SelectorOption[]>([
     {
@@ -161,12 +181,33 @@ export function MultiSelector({
       value: placeholder?.value,
     },
   ]);
+
+  const $selectorStates: SelectorStates = useStore(selectorStates);
+
+  React.useEffect(() => {
+    if (keyForState === "productOwnerSelection") {
+      console.log(
+        "value:",
+        value.map((v) => v.value)
+      );
+      console.log(`${keyForState}:`, $selectorStates[keyForState]);
+    }
+  }, [$selectorStates, value]);
+
   return (
     <Select
       multiple
       options={options}
       value={value}
-      onChange={(o) => setValue(o)}
+      onChange={(o: any) => {
+        setValue(o);
+        setSelectorStates(
+          $selectorStates,
+          keyForState,
+          o.map((v) => v.value)
+        );
+        // setSelectorStates(selectorStates.)
+      }}
       placeholder={{
         label: placeholder?.label,
         value: placeholder?.value,
