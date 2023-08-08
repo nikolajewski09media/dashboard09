@@ -6,7 +6,7 @@ import "rsuite/dist/rsuite.min.css";
 import "@/styles/globals.css";
 
 import Table from "@/components/rsuite/Table.jsx";
-import {Selector, MultiSelector} from "@/components/react/Selector";
+import {Selector, MultiSelector, SelectorOption} from "@/components/react/Selector";
 import { Button } from "@/components/ui/button";
 import { DatePickerWithRange } from "@/components/react/DatePickerWithRange.tsx";
 import Charts from "@/components/react/Charts.jsx";
@@ -35,19 +35,19 @@ const $dates = dates.get();
 const initialData = getDataInRangeNew(data, $dates);
 const initialData2 = getDataInRange(data, $dates);
 
-const poSet = new Set(data.map((item: { po: string }) => item.po));
-const poArray = [...poSet].map((item) => ({
+const poSet: Set<string> = new Set(data.map((item: { po: string }) => item.po));
+const poArray: SelectorOption[]  = [...poSet].map((item: string) => ({
   label: item,
   value: item,
 }));
 
-const gewerkeSet = new Set(data.map((item: { gewerk: string }) => item.gewerk));
-const gewerkeArray = [...gewerkeSet].map((item) => ({
+const gewerkeSet: Set<string> = new Set(data.map((item: { gewerk: string }) => item.gewerk));
+const gewerkeArray: SelectorOption[] = [...gewerkeSet].map((item) => ({
   label: item,
   value: item,
 }));
 
-const unterGewerkeSet = new Set(
+const unterGewerkeSet: Set<string> = new Set(
   data
     .map(
       (item: { untergewerk: [string] }) =>
@@ -66,8 +66,14 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
 ---
 
 <Layout title="Dashboard">
-  <header>
+  
+  <header >
     <H1_Custom>Dashboard09</H1_Custom>
+    <div class="absolute right-5 top-5">
+      <form action="/" >
+        <Button type="submit" >Sign out</Button>
+      </form>
+    </div>
   </header>
   <main class="mx-auto max-w-5xl p-4">
     <Grid1x4
@@ -99,55 +105,6 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
         value: item.label,
       }))} clearable={true} placeholder={{label: "Domain", value: null}} client:load/>
     </Grid1x4>
-      <!-- <Selector
-        onChange={(o) =>
-          setSelectorStates(selectorStates.get(), "aggregatedMethod", o)}
-        options={[
-          { label: "Monatlich", value: "monthly" },
-          { label: "Wöchentlich", value: "weekly" },
-          { label: "Täglich", value: "daily" },
-        ]}
-        value={{ label: "Monatlich", value: "monthly" }}
-        client:load
-      />
-    </Grid1x4>
-    <Grid1x4
-      class:list={[
-        "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
-      ]}
-    >
-      <Selector
-        onChange={(o) =>
-          setSelectorStates(selectorStates.get(), "productOwnerSelection", o)}
-        keyForValue={"productOwnerSelection"}
-        options={poArray}
-        placeholder={"Product Owner"}
-        client:load
-      />
-      <Selector
-        onChange={(o) =>
-          setSelectorStates(selectorStates.get(), "gewerkSelection", o)}
-        keyForValue={"gewerkSelection"}
-        options={gewerkeArray}
-        placeholder={"Gewerk"}
-        client:load
-      />
-      <Selector
-        onChange={(o) =>
-          setSelectorStates(selectorStates.get(), "unterGewerkSelection", o)}
-        options={unterGewerke}
-        client:load
-      />
-      <Selector
-        onChange={(o) =>
-          setSelectorStates(selectorStates.get(), "domainSelection", o)}
-        options={data.map((item: { label: string }) => ({
-          label: item.label,
-          value: item.label,
-        }))}
-        client:load
-      /> -->
-    
     <Grid1x4>
       <Charts items={data} initialData={initialData} client:load />
     </Grid1x4>
@@ -155,9 +112,4 @@ const unterGewerke = [...unterGewerkeSet].map((item) => ({
       <Table items={data} initalData={initialData2} client:load />
     </Grid1x4>
   </main>
-  <footer class="mx-auto max-w-2xl">
-    <form action="">
-      <Button type="submit">Sign out</Button>
-    </form>
-  </footer>
 </Layout>

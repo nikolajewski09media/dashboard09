@@ -1,27 +1,27 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import styles from "./selector.module.css";
 
-type SelectorOption = {
-  label: string | undefined;
-  value: string | undefined;
+export type SelectorOption = {
+  label?: string;
+  value?: string | null;
 };
 
 type MultipleSelectorProps = {
   multiple: true;
   value: SelectorOption[];
-  onChange: (value: SelectorOption[]) => void;
+  onChange: (value?: SelectorOption[]) => void;
 };
 
 type SingleSelectorProps = {
   multiple?: false;
-  value?: SelectorOption;
-  onChange: (value: SelectorOption | undefined) => void;
+  value: SelectorOption;
+  onChange: (value?: SelectorOption) => void;
 };
 
 type SelectorProps = {
   options: SelectorOption[];
-  clearable?: boolean | boolean;
-  placeholder?: SelectorOption;
+  clearable?: boolean;
+  placeholder?: SelectorOption | any;
 } & (SingleSelectorProps | MultipleSelectorProps);
 
 function Select({
@@ -37,7 +37,8 @@ function Select({
   const [highlightedIndex, setHighlightedIndex] = React.useState(0);
 
   function clearOptions() {
-    multiple ? onChange([placeholder]) : onChange(placeholder);
+    const placeholderArr: SelectorOption[] = [placeholder];
+    multiple ? onChange() : onChange(placeholder);
     setIsCleanable(true);
   }
 
@@ -89,7 +90,7 @@ function Select({
                   </button>
                 );
             })
-          : value?.label || value[0].label}
+          : value.label || value[0].label}
       </span>
       <button
         onClick={(e) => {
@@ -126,7 +127,11 @@ function Select({
   );
 }
 
-export function Selector({ placeholder, clearable, options }: SelectorProps) {
+export function Selector({
+  options,
+  placeholder,
+  clearable,
+}: SelectorProps | any): ReactElement {
   const [value, setValue] = React.useState<SelectorOption | undefined>({
     label: placeholder?.label,
     value: placeholder?.value,
@@ -149,7 +154,7 @@ export function MultiSelector({
   placeholder,
   clearable,
   options,
-}: SelectorProps) {
+}: SelectorProps | any): ReactElement {
   const [value, setValue] = React.useState<SelectorOption[]>([
     {
       label: placeholder?.label,
