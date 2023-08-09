@@ -102,7 +102,7 @@ export function getDataInRangeNew(
       (untergewerke &&
         (data[i].gewerk !== "Sanitär Heizung usw." ||
           !data[i].untergewerk ||
-          !data[i].untergewerk.some((u: string) => untergewerke.includes(u))))
+          !data[i].untergewerk.some((u: string) => untergewerke?.includes(u))))
     ) {
       continue;
     }
@@ -151,7 +151,7 @@ export function getDataInRangeNew(
 
 // Helper Functions
 const dateToString = (date: Date) => {
-  const pad = (n) => `${Math.floor(Math.abs(n))}`.padStart(2, "0");
+  const pad = (n: number) => `${Math.floor(Math.abs(n))}`.padStart(2, "0");
   return (
     date.getFullYear() +
     "-" +
