@@ -156,7 +156,6 @@ export function Selector({
       options={options}
       value={value}
       onChange={(o) => {
-        console.log(o);
         setValue(o);
         setSelectorStates($selectorStates, keyForState, o.value || null);
       }}
@@ -184,16 +183,6 @@ export function MultiSelector({
 
   const $selectorStates: SelectorStates = useStore(selectorStates);
 
-  React.useEffect(() => {
-    if (keyForState === "productOwnerSelection") {
-      console.log(
-        "value:",
-        value.map((v) => v.value)
-      );
-      console.log(`${keyForState}:`, $selectorStates[keyForState]);
-    }
-  }, [$selectorStates, value]);
-
   return (
     <Select
       multiple
@@ -206,7 +195,6 @@ export function MultiSelector({
           keyForState,
           o.map((v) => v.value)
         );
-        // setSelectorStates(selectorStates.)
       }}
       placeholder={{
         label: placeholder?.label,
