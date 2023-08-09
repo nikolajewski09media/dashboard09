@@ -36,6 +36,8 @@ const initialData = getDataInRangeNew(data, $dates);
 const initialData2 = getDataInRange(data, $dates);
 
 
+
+
 const diagramArtArray: SelectorOption[] = [
         { label: "Balken Diagramm", value: "bd" },
         { label: "Linien Diagramm", value: "ld" },
@@ -105,10 +107,10 @@ const domainArray: SelectorOption[] = data.map((item: { label: string }) => ({
         "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
       ]}
     >
-      <MultiSelector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: []}} keyForState={"productOwnerSelection"} client:load/>
-      <MultiSelector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: []}} keyForState={"gewerkSelection"} client:load/>
-      <MultiSelector options={unterGewerkeArray} clearable={true} placeholder={{label: "Untergewerk", value: []}} keyForState={"unterGewerkSelection"} client:load/>
-      <MultiSelector options={domainArray} clearable={true} placeholder={{label: "Domain", value: []}}
+      <MultiSelector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: null}} keyForState={"productOwnerSelection"} client:load/>
+      <MultiSelector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: null}} keyForState={"gewerkSelection"} client:load/>
+      <MultiSelector options={unterGewerkeArray} clearable={true} placeholder={{label: "Untergewerk", value: null}} keyForState={"unterGewerkSelection"} client:load/>
+      <MultiSelector options={domainArray} clearable={true} placeholder={{label: "Domain", value: null}}
       keyForState={"domainSelection"}
        client:load/>
     </Grid1x4>
