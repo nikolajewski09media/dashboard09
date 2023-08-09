@@ -93,70 +93,155 @@ export function getDataInRange(
   return rowData;
 }
 
-// Diese Funktion ruft aggregierte Daten aus einer API basierend auf einem Zeitraum, einer Aggregationsmethode und einem optionalen Domainnamen ab.
+// // Diese Funktion ruft aggregierte Daten aus einer API basierend auf einem Zeitraum, einer Aggregationsmethode und einem optionalen Domainnamen ab.
+// export function getDataInRangeNew(
+//   data: any,
+//   dates: Dates | any, // Der Zeitraum, für den die Daten abgerufen werden sollen (Array mit Start- und Enddatum)
+//   aggregation: string = "monthly", // Die Aggregationsmethode (optional, Standardwert ist "monthly")
+//   domain: string | string[] | null = null, // Der Domainname, nach dem gefiltert werden soll (optional, Standardwert ist null)
+//   po: string | string[] | null = null, // Hinzugefügter Parameter für 'po' (optional)
+//   gewerke: string | string[] | null = null, // Hinzugefügter Parameter für 'gewerke' (optional)
+//   untergewerke: string | string[] | null = null, // Hinzugefügter Parameter für 'untergewerke' (optional)
+//   toExclude: string = "Paid Search" // Der Schlüsselwert, der aus den Berichten ausgeschlossen werden soll (optional, Standardwert ist "Paid Search")
+// ) {
+//   const startDate = dates.from.toISOString().split("T")[0];
+//   const endDate = dates.to.toISOString().split("T")[0];
+
+//   // Daten von der API abrufen und in der Variable 'data' speichern
+
+//   const aggregatedData: any = {}; // Ein leeres Objekt erstellen, in dem die aggregierten Daten gespeichert werden
+
+//   // Schleife über alle Elemente in den Daten
+//   for (let i = 0; i < data.length; i++) {
+//     // Filtere nach Domainnamen, falls angegeben
+//     if (
+//       (domain && data[i].label !== domain) || // Filter für Domain
+//       (po && data[i].po !== po) || // Filter für 'po'
+//       (gewerke && data[i].gewerk !== gewerke) || // Filter für 'gewerke'
+//       (untergewerke &&
+//         (data[i].gewerk !== "Sanitär Heizung usw." ||
+//           !data[i].untergewerk ||
+//           data[i].untergewerk[0] !== untergewerke)) // Filter für 'untergewerke' abhängig von 'gewerke'
+//     ) {
+//       continue; // Wenn ein Domainname angegeben wurde und dieser nicht mit dem 'label' des Elements übereinstimmt, überspringe das Element
+//     }
+
+//     data[i].reports.forEach((reports: any) => {
+//       // Schleife über die Berichte für das aktuelle Element
+//       for (let date in reports) {
+//         // Überprüfe, ob das Datum im gewünschten Zeitraum liegt
+//         if (date >= startDate && date <= endDate) {
+//           const report = reports[date]; // Der aktuelle Bericht für das Datum
+//           let aggregationKey = "";
+
+//           // Abhängig von der gewählten Aggregationsmethode 'aggregation' einen Aggregationsschlüssel erstellen
+//           if (aggregation === "monthly") {
+//             aggregationKey = date.substring(0, 7); // Monat im Format 'YYYY-MM'
+//           } else if (aggregation === "weekly") {
+//             const weekStart = new Date(date);
+//             const dayOfWeek = weekStart.getDay();
+//             weekStart.setDate(
+//               weekStart.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1)
+//             ); // Erster Tag der Woche (Montag)
+//             aggregationKey = weekStart.toISOString().substring(0, 10); // Woche im Format 'YYYY-MM-DD'
+//           } else if (aggregation === "daily") {
+//             aggregationKey = date; // Tägliches Datum im Format 'YYYY-MM-DD'
+//           }
+
+//           // Falls der Aggregationsschlüssel noch nicht im 'aggregatedData'-Objekt existiert, füge ihn hinzu
+//           if (!aggregatedData[aggregationKey]) {
+//             aggregatedData[aggregationKey] = {
+//               name: aggregationKey, // Der Name des Aggregationsschlüssels
+//               clicks: 0, // Anfangswert für die aggregierten Klicks
+//             };
+//           }
+
+//           // Iteriere über alle Schlüssel im Bericht und aggregiere die Klicks (außer dem auszuschließenden Schlüssel)
+//           for (let key in report) {
+//             if (key !== toExclude) {
+//               aggregatedData[aggregationKey].clicks += parseInt(report[key]);
+//             }
+//           }
+//         }
+//       }
+//     });
+//   }
+
+//   const newData = Object.values(aggregatedData); // Konvertiere die aggregierten Daten in ein Array
+//   // Sortiere das Array chronologisch basierend auf dem 'name'-Schlüssel (entsprechend der Aggregationseinheit)
+//   newData.sort((a: any, b: any) => (a.name > b.name ? 1 : -1));
+
+//   return newData; // Gebe die sortierten und aggregierten Daten zurück
+// }
+
+function istArray(variable: any): boolean {
+  return Array.isArray(variable);
+}
+
+function ifNullArrayThentoNull(params: any) {
+  if (istArray(params) && params?.length === 1 && params[0] === null) {
+    params = null;
+  }
+  return params;
+}
+
 export function getDataInRangeNew(
   data: any,
-  dates: Dates | any, // Der Zeitraum, für den die Daten abgerufen werden sollen (Array mit Start- und Enddatum)
-  aggregation: string = "monthly", // Die Aggregationsmethode (optional, Standardwert ist "monthly")
-  domain: string | string[] | null = null, // Der Domainname, nach dem gefiltert werden soll (optional, Standardwert ist null)
-  po: string | string[] | null = null, // Hinzugefügter Parameter für 'po' (optional)
-  gewerke: string | string[] | null = null, // Hinzugefügter Parameter für 'gewerke' (optional)
-  untergewerke: string | string[] | null = null, // Hinzugefügter Parameter für 'untergewerke' (optional)
-  toExclude: string = "Paid Search" // Der Schlüsselwert, der aus den Berichten ausgeschlossen werden soll (optional, Standardwert ist "Paid Search")
+  dates: Dates | any,
+  aggregation: string = "monthly",
+  domain: string[] | null = null,
+  po: string[] | null = null,
+  gewerke: string[] | null = null,
+  untergewerke: string[] | null = null,
+  toExclude: string = "Paid Search"
 ) {
   const startDate = dates.from.toISOString().split("T")[0];
   const endDate = dates.to.toISOString().split("T")[0];
 
-  // Daten von der API abrufen und in der Variable 'data' speichern
-
-  const aggregatedData: any = {}; // Ein leeres Objekt erstellen, in dem die aggregierten Daten gespeichert werden
-
-  // Schleife über alle Elemente in den Daten
+  const aggregatedData: any = {};
+  domain = ifNullArrayThentoNull(domain);
+  po = ifNullArrayThentoNull(po);
+  gewerke = ifNullArrayThentoNull(gewerke);
+  untergewerke = ifNullArrayThentoNull(untergewerke);
   for (let i = 0; i < data.length; i++) {
-    // Filtere nach Domainnamen, falls angegeben
     if (
-      (domain && data[i].label !== domain) || // Filter für Domain
-      (po && data[i].po !== po) || // Filter für 'po'
-      (gewerke && data[i].gewerk !== gewerke) || // Filter für 'gewerke'
+      (domain && !domain.includes(data[i].label)) ||
+      (po && !po.includes(data[i].po)) ||
+      (gewerke && !gewerke.includes(data[i].gewerk)) ||
       (untergewerke &&
         (data[i].gewerk !== "Sanitär Heizung usw." ||
           !data[i].untergewerk ||
-          data[i].untergewerk[0] !== untergewerke)) // Filter für 'untergewerke' abhängig von 'gewerke'
+          !data[i].untergewerk.some((u: string) => untergewerke.includes(u))))
     ) {
-      continue; // Wenn ein Domainname angegeben wurde und dieser nicht mit dem 'label' des Elements übereinstimmt, überspringe das Element
+      continue;
     }
 
     data[i].reports.forEach((reports: any) => {
-      // Schleife über die Berichte für das aktuelle Element
       for (let date in reports) {
-        // Überprüfe, ob das Datum im gewünschten Zeitraum liegt
         if (date >= startDate && date <= endDate) {
-          const report = reports[date]; // Der aktuelle Bericht für das Datum
+          const report = reports[date];
           let aggregationKey = "";
 
-          // Abhängig von der gewählten Aggregationsmethode 'aggregation' einen Aggregationsschlüssel erstellen
           if (aggregation === "monthly") {
-            aggregationKey = date.substring(0, 7); // Monat im Format 'YYYY-MM'
+            aggregationKey = date.substring(0, 7);
           } else if (aggregation === "weekly") {
             const weekStart = new Date(date);
             const dayOfWeek = weekStart.getDay();
             weekStart.setDate(
               weekStart.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1)
-            ); // Erster Tag der Woche (Montag)
-            aggregationKey = weekStart.toISOString().substring(0, 10); // Woche im Format 'YYYY-MM-DD'
+            );
+            aggregationKey = weekStart.toISOString().substring(0, 10);
           } else if (aggregation === "daily") {
-            aggregationKey = date; // Tägliches Datum im Format 'YYYY-MM-DD'
+            aggregationKey = date;
           }
 
-          // Falls der Aggregationsschlüssel noch nicht im 'aggregatedData'-Objekt existiert, füge ihn hinzu
           if (!aggregatedData[aggregationKey]) {
             aggregatedData[aggregationKey] = {
-              name: aggregationKey, // Der Name des Aggregationsschlüssels
-              clicks: 0, // Anfangswert für die aggregierten Klicks
+              name: aggregationKey,
+              clicks: 0,
             };
           }
 
-          // Iteriere über alle Schlüssel im Bericht und aggregiere die Klicks (außer dem auszuschließenden Schlüssel)
           for (let key in report) {
             if (key !== toExclude) {
               aggregatedData[aggregationKey].clicks += parseInt(report[key]);
@@ -167,9 +252,8 @@ export function getDataInRangeNew(
     });
   }
 
-  const newData = Object.values(aggregatedData); // Konvertiere die aggregierten Daten in ein Array
-  // Sortiere das Array chronologisch basierend auf dem 'name'-Schlüssel (entsprechend der Aggregationseinheit)
+  const newData = Object.values(aggregatedData);
   newData.sort((a: any, b: any) => (a.name > b.name ? 1 : -1));
 
-  return newData; // Gebe die sortierten und aggregierten Daten zurück
+  return newData;
 }
