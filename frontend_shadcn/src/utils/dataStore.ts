@@ -161,13 +161,13 @@ const dateToString = (date: Date) => {
   );
 };
 
-function istArray(variable: any): boolean {
-  return Array.isArray(variable);
-}
-
-function ifNullArrayThentoNull(params: any) {
-  if (istArray(params) && params?.length === 1 && params[0] === null) {
-    params = null;
+function ifNullArrayThentoNull(nullArray: any) {
+  if (
+    Array.isArray(nullArray) &&
+    nullArray?.length === 1 &&
+    nullArray[0] === null
+  ) {
+    nullArray = null;
   }
-  return params;
+  return nullArray;
 }
