@@ -20,6 +20,9 @@ import {
   getDataInRange,
 } from "@/utils/dataStore";
 
+import { app } from "../firebase/server";
+import { getAuth } from "firebase-admin/auth";
+
 const domainName =
   import.meta.env.PUBLIC_BE_DOMAIN_NAME || "http://localhost:3000";
 
@@ -77,6 +80,23 @@ const domainArray: SelectorOption[] = data.map((item: { label: string }) => ({
         value: item.label,
       }))
 
+
+// Authentication
+const auth = getAuth(app);
+
+/* Check current session */
+const sessionCookie = Astro.cookies.get("session").value;
+
+if (!sessionCookie) {
+  return Astro.redirect("/");
+}
+const decodedCookie = await auth.verifySessionCookie(sessionCookie);
+const user = await auth.getUser(decodedCookie.uid);
+
+if (!user) {
+  return Astro.redirect("/");
+}
+
 ---
 
 <Layout title="Dashboard">
@@ -84,7 +104,7 @@ const domainArray: SelectorOption[] = data.map((item: { label: string }) => ({
   <header >
     <H1_Custom>Dashboard09</H1_Custom>
     <div class="absolute right-5 top-5">
-      <form action="/" >
+      <form action="/api/auth/logout" >
         <Button type="submit" >Sign out</Button>
       </form>
     </div>
