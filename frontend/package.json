@@ -13,6 +13,7 @@
     "@astrojs/cloudflare": "^6.6.2",
     "@astrojs/react": "^2.2.1",
     "@astrojs/tailwind": "^4.0.0",
+    "@astrojs/vercel": "^3.8.0",
     "@nanostores/react": "^0.7.1",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-popover": "^1.0.6",
