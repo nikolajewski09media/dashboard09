@@ -115,27 +115,27 @@ if (!user) {
         "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
       ]}
     >
-      <DatePickerWithRange client:load />
-      <Selector options={diagramArtArray} placeholder={{label: "Balken Diagramm", value: "bd"}} keyForState={"diagramArt"} client:load/>
-      <Selector options={aggMethodArray} placeholder={{label: "Monatlich", value: "monthly"}} keyForState={"aggregatedMethod"} client:load/>
+      <DatePickerWithRange client:only="react" />
+      <Selector options={diagramArtArray} placeholder={{label: "Balken Diagramm", value: "bd"}} keyForState={"diagramArt"} client:only="react"/>
+      <Selector options={aggMethodArray} placeholder={{label: "Monatlich", value: "monthly"}} keyForState={"aggregatedMethod"} client:only="react"/>
       </Grid1x4>
       <Grid1x4
       class:list={[
         "grid grid-cols-1 gap-8 place-content-around md:grid-cols-1 lg:grid-cols-4",
       ]}
     >
-      <MultiSelector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: null}} keyForState={"productOwnerSelection"} client:load/>
-      <MultiSelector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: null}} keyForState={"gewerkSelection"} client:load/>
-      <MultiSelector options={unterGewerkeArray} clearable={true} placeholder={{label: "Untergewerk", value: null}} keyForState={"unterGewerkSelection"} client:load/>
+      <MultiSelector options={poArray} clearable={true} placeholder={{label: "Product Owner", value: null}} keyForState={"productOwnerSelection"} client:only="react"/>
+      <MultiSelector options={gewerkeArray} clearable={true} placeholder={{label: "Gewerk", value: null}} keyForState={"gewerkSelection"} client:only="react"/>
+      <MultiSelector options={unterGewerkeArray} clearable={true} placeholder={{label: "Untergewerk", value: null}} keyForState={"unterGewerkSelection"} client:only="react"/>
       <MultiSelector options={domainArray} clearable={true} placeholder={{label: "Domain", value: null}}
       keyForState={"domainSelection"}
-       client:load/>
+       client:only="react"/>
     </Grid1x4>
     <Grid1x4>
-      <Charts items={data} initialData={initialData} client:load />
+      <Charts items={data} initialData={initialData} client:only="react" />
     </Grid1x4>
     <Grid1x4>
-      <Table items={data} initalData={initialData2} client:load />
+      <Table items={data} initalData={initialData2} client:only="react" />
     </Grid1x4>
   </main>
 </Layout>

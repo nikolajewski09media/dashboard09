@@ -3,8 +3,9 @@ import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import cloudflare from "@astrojs/cloudflare";
 import vercel from "@astrojs/vercel/serverless";
-
 import netlify from "@astrojs/netlify/functions";
+import node from "@astrojs/node";
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,5 +13,5 @@ export default defineConfig({
     applyBaseStyles: false
   })],
   output: "server",
-  adapter: netlify()
+  adapter: cloudflare()
 });
