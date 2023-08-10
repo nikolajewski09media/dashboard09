@@ -13,5 +13,7 @@ export default defineConfig({
     applyBaseStyles: false
   })],
   output: "server",
-  adapter: cloudflare()
+  adapter: node({
+    mode: "standalone"
+  })
 });
