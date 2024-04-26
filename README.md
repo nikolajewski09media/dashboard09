@@ -2,6 +2,7 @@
 
 ## Frontend
 - Kompletter Umstieg auf Shadcn/Ui
+- Test
 
 
 ## Backend
